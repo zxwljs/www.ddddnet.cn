@@ -20,7 +20,8 @@
     "DeepSeek模型在电商运营中的用法",
     "POD设计中的合理使用边界",
     "AI生成内容如何通过平台审核",
-    "AI生成商品标题技巧与最佳实践"
+    "AI生成商品标题技巧与最佳实践",
+    "跨境电商SaaS工具生态分析"
   ],
   "titles": [],
   "posts": [
@@ -336,7 +337,24 @@
         "跨境电商",
         "叮当跨境ERP"
       ]
+    },
+    {
+      "slug": "temu-half-saas-tool-ecology-analysis",
+      "title": "Temu半托管卖家的SaaS工具生态分析：提升效率和合规性",
+      "description": "作为Temu半托管卖家，如何高效管理订单和商品？本文深入探讨跨境电商SaaS工具生态，重点介绍叮当跨境ERP的功能及其在提高运营效率与合规性方面的优势。",
+      "category": "行业趋势",
+      "date": "2026-07-25",
+      "keywords": [
+        "SaaS工具",
+        "跨境电商",
+        "Temu",
+        "ERP",
+        "运营效率",
+        "合规性",
+        "叮当跨境ERP",
+        "ddddnet.cn"
+      ]
     }
   ],
-  "count": 21
+  "count": 22
 }
