@@ -26,10 +26,11 @@ website/
 │       └── xxx.html
 ├── scripts/                                # 自动化脚本
 │   ├── generate-seo.js                     # 调用 GLM-4V-Flash 生成文章
-│   ├── push-seo.js                         # 推送到 Bing / 百度
-│   ├── topics.js                           # 静态选题库（100 个）
-│   ├── topics-hot.json                     # 动态热点选题（每 7 天更新）
-│   └── generated.json                      # 已生成文章记录
+│   ├── push-seo.js                         # 推送到 Bing / 百度（百度每 24h 一次，避免超配额）
+│   ├── topics.js                            # 静态选题库（97 个）
+│   ├── topics-hot.json                     # 动态热点选题（每 7 天更新，GitHub Actions 运行时生成）
+│   ├── generated.json                      # 已生成文章记录（运行时，本地不入库）
+│   └── push-log.json                       # 推送日志（运行时，本地不入库）
 └── .github/
     └── workflows/
         └── seo-blog.yml                    # GitHub Actions 每小时自动生成并推送

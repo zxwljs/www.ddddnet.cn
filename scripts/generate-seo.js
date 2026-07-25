@@ -7,6 +7,9 @@
 const fs = require('fs');
 const path = require('path');
 
+// 固定使用北京时区，避免 GitHub Actions（UTC）运行时日期/月份偏移
+process.env.TZ = 'Asia/Shanghai';
+
 // ===== 配置 =====
 const CONFIG = {
   apiUrl: 'https://open.bigmodel.cn/api/paas/v4/chat/completions',
@@ -228,10 +231,12 @@ async function callGLM(topic) {
 SEO关键词：${topic.keywords.join('、')}
 
 要求：
-- 1800-2500字，HTML标签书写（h2/h3/p/ul/ol/li/strong/blockquote）
-- 标题像同行分享，不要「全面解析」「深度解读」
-- 开头直接切入痛点，不要「大家好」「随着跨境电商发展」
-- 主体有实操步骤或案例，不要泛泛而谈
+- 正文 HTML 内纯文字（不含标签）不少于 1800 字、不超过 2800 字，按汉字字符计；不足请补充实操步骤、案例细节或常见问题，不要靠空话凑字数
+- 用 h2/h3/p/ul/ol/li/strong/blockquote 等 HTML 标签书写
+- 标题像同行分享，不要「全面解析」「深度解读」「一文搞懂」
+- 开头直接切入痛点，禁止「大家好」「随着跨境电商发展」「在当今...背景下」「近年来」「如今」类套话开头
+- 主体必须有具体实操步骤或真实案例（数字、流程、坑点），不要泛泛而谈
+- 文章分 4-6 个 h2 章节，每节有实质内容
 - 不要emoji、不要「点赞转发」类社交用语，正文内不要出现 [XXX] 这种方括号标记
 
 叮当跨境ERP（ddddnet.cn）是你日常用的工具，功能：POD智能套图(批量生成多SKU图)、侵权查询(查商标版权)、AI标题生成、实用工具(压缩/改尺寸/白底图)、自定义AI模型接入。
@@ -347,6 +352,21 @@ function parseArticle(raw, topic) {
 
   // 移除 emoji 表情符号
   content = content.replace(/[\u{1F300}-\u{1F9FF}\u{1F600}-\u{1F64F}\u{2600}-\u{26FF}\u{2700}-\u{27BF}\u{FE00}-\u{FE0F}\u{1F000}-\u{1F02F}\u{1F0A0}-\u{1F0FF}\u{1F100}-\u{1F1FF}\u{1F200}-\u{1F2FF}]/gu, '');
+
+  // 移除开头 AI 套话段落（prompt 已明确禁止）
+  // 只删第一段，避免误伤正文中合法的「随着」表述
+  // 情况1：HTML 段落 <p>随着...</p>
+  content = content.replace(
+    /^\s*<p>\s*(?:随着|在当今|在如今|如今|近年来|当下|眼下|伴随着)[\s\S]*?<\/p>\s*/i,
+    ''
+  );
+  // 情况2：纯文本开头（无 <p> 包裹）
+  content = content.replace(
+    /^\s*(?:随着|在当今|在如今|如今|近年来|当下|眼下|伴随着)[^\n]*\n?/i,
+    ''
+  );
+  // 清理因删除开头套话可能残留的空 p 标签
+  content = content.replace(/^<p>\s*<\/p>\s*/i, '');
 
   // 移除社交平台套话和 AI 套话
   const junkPatterns = [
