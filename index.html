@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>叮当跨境ERP - Temu半托管POD智能套图系统</title>
+<meta name="description" content="面向Temu半托管卖家的一站式POD智能套图工具，批量套图、侵权检测、一键导出，让你的上品效率提升10倍。" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%232563eb'/%3E%3Cstop offset='100%25' style='stop-color:%230ea5e9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Ctext x='50' y='66' font-size='52' font-weight='bold' fill='white' text-anchor='middle' font-family='Arial'%3E叮%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --bg:#fbfcfd;--bg2:#f4f7fb;--surface:#ffffff;--surface2:#f8fafc;
+  --border:#eef2f7;--border2:#e2e8f0;--border3:#cbd5e1;
+  --text:#0b1426;--text2:#475569;--text3:#94a3b8;--text4:#64748b;
+  --p1:#2563eb;--p2:#0ea5e9;--p3:#3b82f6;--a1:#06b6d4;--a2:#22d3ee;
+  --g1:linear-gradient(135deg,#2563eb,#0ea5e9);--g1s:linear-gradient(135deg,rgba(37,99,235,.06),rgba(14,165,233,.06));
+  --g2:linear-gradient(135deg,#06b6d4,#2563eb);
+  --sh1:0 1px 2px rgba(15,23,42,.04),0 1px 3px rgba(15,23,42,.03);
+  --sh2:0 4px 12px rgba(15,23,42,.04),0 2px 6px rgba(15,23,42,.03);
+  --sh3:0 12px 32px rgba(15,23,42,.06),0 4px 12px rgba(15,23,42,.04);
+  --sh4:0 24px 60px rgba(15,23,42,.08),0 8px 24px rgba(15,23,42,.05);
+  --r1:24px;--r2:18px;--r3:14px;--r4:10px;--r5:8px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans SC','Plus Jakarta Sans',-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased;font-feature-settings:"cv02","cv03","cv04","cv11"}
+::selection{background:rgba(37,99,235,.15);color:var(--p1)}
+
+/* Nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:all .3s}
+.nav.scrolled{backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);background:rgba(255,255,255,.8);border-bottom:1px solid var(--border);box-shadow:0 1px 0 rgba(0,0,0,.02)}
+.nav-in{max-width:1200px;margin:0 auto;padding:0 28px;height:68px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:11px;cursor:pointer;font-size:18px;font-weight:800;letter-spacing:-.02em}
+.logo-ic{width:34px;height:34px;border-radius:9px;background:var(--g1);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:16px;box-shadow:0 3px 10px rgba(37,99,235,.3),inset 0 1px 0 rgba(255,255,255,.3)}
+.logo-t{background:var(--g1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.nav-l{display:flex;gap:32px;list-style:none}
+.nav-l a{color:var(--text2);text-decoration:none;font-size:14px;font-weight:500;transition:color .2s;position:relative}
+.nav-l a:hover{color:var(--p1)}
+.nav-l a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--g1);border-radius:2px;transition:width .3s}
+.nav-l a:hover::after{width:100%}
+.btn{display:inline-flex;align-items:center;gap:7px;padding:9px 18px;border-radius:var(--r5);font-size:13.5px;font-weight:600;text-decoration:none;cursor:pointer;border:none;transition:all .25s;font-family:inherit;white-space:nowrap}
+.btn-p{background:var(--g1);color:#fff;box-shadow:0 3px 10px rgba(37,99,235,.3),inset 0 1px 0 rgba(255,255,255,.2)}
+.btn-p:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(37,99,235,.4),inset 0 1px 0 rgba(255,255,255,.2)}
+.btn-g{background:var(--surface);color:var(--text);border:1px solid var(--border2)}
+.btn-g:hover{border-color:var(--p1);color:var(--p1);background:var(--surface2)}
+.btn-lg{padding:13px 28px;font-size:15px;border-radius:var(--r4)}
+.mbtn{display:none;background:none;border:none;color:var(--text);cursor:pointer;padding:6px}
+.mmenu{display:none;position:fixed;top:68px;left:0;right:0;background:#fff;border-bottom:1px solid var(--border);padding:12px 20px;z-index:99;box-shadow:var(--sh2)}
+.mmenu.open{display:block}
+.mmenu a{display:block;padding:13px 14px;color:var(--text2);text-decoration:none;font-size:14.5px;border-radius:var(--r5);transition:all .2s;font-weight:500}
+.mmenu a:hover{background:var(--surface2);color:var(--text)}
+
+/* Layout */
+.wrap{max-width:1200px;margin:0 auto;padding:0 28px}
+section{padding:110px 0;position:relative}
+.eyebrow{display:inline-flex;align-items:center;gap:7px;padding:5px 14px;background:var(--g1s);border:1px solid rgba(37,99,235,.12);border-radius:999px;font-size:12.5px;font-weight:600;color:var(--p1);margin-bottom:18px;letter-spacing:.01em}
+.eyebrow svg{width:13px;height:13px}
+.h2{font-size:40px;font-weight:800;line-height:1.18;letter-spacing:-.025em;margin-bottom:14px}
+.h2 .g{background:var(--g1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.sub{font-size:17px;color:var(--text2);max-width:580px;line-height:1.7}
+.sh{text-align:center;margin-bottom:56px}
+.sh .sub{margin:0 auto}
+.sec-div{width:48px;height:3px;background:var(--g1);border-radius:3px;margin:0 auto 20px}
+
+/* Hero */
+.hero{padding:130px 0 90px;position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0;pointer-events:none}
+.hero-bg::before{content:'';position:absolute;top:-100px;left:50%;width:1100px;height:700px;background:radial-gradient(ellipse at center,rgba(37,99,235,.07) 0%,transparent 65%);transform:translateX(-50%)}
+.hero-bg::after{content:'';position:absolute;top:200px;right:-200px;width:500px;height:500px;background:radial-gradient(circle,rgba(6,182,212,.06) 0%,transparent 70%);border-radius:50%}
+.hero-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:center;position:relative;z-index:1}
+.hero-badge{display:inline-flex;align-items:center;gap:9px;padding:6px 14px 6px 8px;background:#fff;border:1px solid var(--border2);border-radius:999px;font-size:13px;font-weight:600;margin-bottom:26px;box-shadow:var(--sh1);color:var(--text)}
+.hero-badge .d{width:18px;height:18px;border-radius:50%;background:var(--g1);display:flex;align-items:center;justify-content:center}
+.hero-badge .d::after{content:'';width:6px;height:6px;border-radius:50%;background:#fff}
+.hero-badge .live{font-size:11px;color:var(--p1);font-weight:700;letter-spacing:.05em}
+.hero h1{font-size:56px;font-weight:900;line-height:1.08;letter-spacing:-.035em;margin-bottom:22px}
+.hero h1 .g{background:linear-gradient(120deg,#2563eb 0%,#0ea5e9 40%,#06b6d4 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero h1 .hl{position:relative;display:inline-block}
+.hero h1 .hl::after{content:'';position:absolute;bottom:2px;left:-2px;right:-2px;height:10px;background:linear-gradient(90deg,rgba(37,99,235,.12),rgba(14,165,233,.12));z-index:-1;border-radius:4px}
+.hero-desc{font-size:18px;color:var(--text2);line-height:1.75;margin-bottom:32px;max-width:540px}
+.hero-cta{display:flex;gap:12px;margin-bottom:44px;flex-wrap:wrap}
+.hero-stats{display:flex;gap:36px;flex-wrap:wrap}
+.stat{display:flex;flex-direction:column;gap:3px}
+.stat-n{font-size:28px;font-weight:800;letter-spacing:-.02em;background:var(--g1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.stat-l{font-size:12.5px;color:var(--text3);font-weight:500}
+
+/* Hero visual */
+.hv{position:relative}
+.hv-card{background:#fff;border:1px solid var(--border2);border-radius:var(--r1);box-shadow:var(--sh4);overflow:hidden;position:relative}
+.hv-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--g1)}
+.hv-top{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:1px solid var(--border)}
+.hv-dots{display:flex;gap:6px}
+.hv-dots span{width:10px;height:10px;border-radius:50%}
+.hv-dots span:nth-child(1){background:#ff5f57}
+.hv-dots span:nth-child(2){background:#ffbd2e}
+.hv-dots span:nth-child(3){background:#28c940}
+.hv-title{font-size:12px;color:var(--text3);font-weight:600;display:flex;align-items:center;gap:6px}
+.hv-title .pulse{width:7px;height:7px;border-radius:50%;background:#10b981;box-shadow:0 0 8px rgba(16,185,129,.6);animation:pulse 1.8s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.hv-body{padding:18px}
+.hv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px}
+.hv-item{aspect-ratio:1;border-radius:var(--r4);background:linear-gradient(135deg,#f8fafc,#f1f5f9);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;position:relative;transition:all .3s;overflow:hidden}
+.hv-item:hover{border-color:var(--p2);transform:scale(1.03)}
+.hv-item.done{background:linear-gradient(135deg,#eff6ff,#dbeafe);border-color:#bfdbfe}
+.hv-item.done::after{content:'✓';position:absolute;top:4px;right:6px;font-size:10px;color:var(--p1);font-weight:800}
+.hv-item svg{width:36%;height:36%;color:var(--text3);opacity:.6}
+.hv-item.done svg{color:var(--p1);opacity:.8}
+.hv-prog{padding-top:14px;border-top:1px solid var(--border)}
+.hv-prog-top{display:flex;justify-content:space-between;font-size:12px;margin-bottom:7px;font-weight:600}
+.hv-prog-top span:first-child{color:var(--text2)}
+.hv-prog-top span:last-child{color:var(--p1)}
+.hv-bar{height:6px;background:var(--border2);border-radius:999px;overflow:hidden;position:relative}
+.hv-fill{height:100%;width:72%;background:var(--g1);border-radius:999px;position:relative;overflow:hidden}
+.hv-fill::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);animation:shine 2s infinite}
+@keyframes shine{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+
+.hv-float{position:absolute;background:#fff;border:1px solid var(--border2);border-radius:var(--r3);padding:11px 15px;box-shadow:var(--sh3);display:flex;align-items:center;gap:10px;animation:floaty 4s ease-in-out infinite}
+.hv-f1{top:-16px;right:-14px}
+.hv-f2{bottom:60px;left:-20px;animation-delay:-2s}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.hv-fi{width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.hv-fi.g{background:#dcfce7;color:#16a34a}
+.hv-fi.b{background:#dbeafe;color:#2563eb}
+.hv-ft strong{display:block;font-size:13px;font-weight:700;line-height:1.3}
+.hv-ft span{font-size:11px;color:var(--text3)}
+
+/* Platforms strip */
+.strip{padding:36px 0;background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.strip-in{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap}
+.strip-l{font-size:13px;color:var(--text3);font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.strip-tag{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;background:var(--g1s);border:1px solid rgba(37,99,235,.12);border-radius:999px;font-size:15px;font-weight:700;color:var(--p1)}
+.strip-tag .b{font-size:11px;padding:2px 8px;background:var(--g1);color:#fff;border-radius:999px;font-weight:600}
+
+/* Features */
+.feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.feat{background:var(--surface);border:1px solid var(--border2);border-radius:var(--r2);padding:30px 28px;transition:all .35s cubic-bezier(.4,0,.2,1);position:relative;overflow:hidden}
+.feat::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--g1);transform:scaleX(0);transform-origin:left;transition:transform .4s}
+.feat:hover{transform:translateY(-4px);border-color:rgba(37,99,235,.2);box-shadow:var(--sh3)}
+.feat:hover::before{transform:scaleX(1)}
+.feat-ic{width:50px;height:50px;border-radius:var(--r3);background:var(--g1s);border:1px solid rgba(37,99,235,.1);display:flex;align-items:center;justify-content:center;margin-bottom:20px;color:var(--p1)}
+.feat-ic svg{width:24px;height:24px}
+.feat h3{font-size:18px;font-weight:700;margin-bottom:10px;letter-spacing:-.01em}
+.feat p{color:var(--text2);font-size:14.5px;line-height:1.65}
+
+/* Advantage */
+.adv-sec{background:linear-gradient(180deg,transparent,var(--bg2),transparent)}
+.adv-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.adv-list{display:flex;flex-direction:column;gap:14px}
+.adv-it{display:flex;gap:18px;padding:22px 24px;background:var(--surface);border:1px solid var(--border2);border-radius:var(--r2);transition:all .3s;position:relative;overflow:hidden}
+.adv-it:hover{border-color:rgba(37,99,235,.2);box-shadow:var(--sh2);transform:translateX(4px)}
+.adv-n{width:40px;height:40px;flex-shrink:0;border-radius:11px;background:var(--g1);display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;color:#fff;box-shadow:0 3px 10px rgba(37,99,235,.3)}
+.adv-it h4{font-size:17px;font-weight:700;margin-bottom:5px}
+.adv-it p{color:var(--text2);font-size:14px;line-height:1.65}
+.adv-vis{position:relative;height:460px}
+.adv-card{position:absolute;background:#fff;border:1px solid var(--border2);border-radius:var(--r2);padding:20px;box-shadow:var(--sh3);width:68%}
+.adv-c1{top:20px;left:0;animation:floaty 5s ease-in-out infinite}
+.adv-c2{top:170px;right:0;width:64%;animation:floaty 5s ease-in-out infinite -1.5s}
+.adv-c3{bottom:10px;left:8%;width:60%;animation:floaty 5s ease-in-out infinite -3s}
+.adv-ch{display:flex;align-items:center;gap:10px;margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+.adv-ci{width:32px;height:32px;border-radius:9px;display:flex;align-items:center;justify-content:center}
+.adv-ch strong{font-size:13px;font-weight:700}
+.adv-cb{display:flex;flex-direction:column;gap:7px}
+.adv-cr{display:flex;justify-content:space-between;font-size:12.5px}
+.adv-cr span:first-child{color:var(--text3)}
+.adv-cr span:last-child{font-weight:600;color:var(--text2)}
+
+/* Steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;position:relative}
+.steps::before{content:'';position:absolute;top:36px;left:12%;right:12%;height:2px;background:linear-gradient(90deg,var(--p1),var(--a1));opacity:.18;z-index:0}
+.step{text-align:center;position:relative;z-index:1}
+.step-n{width:72px;height:72px;margin:0 auto 20px;border-radius:50%;background:#fff;border:2px solid var(--border2);display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:800;color:var(--p1);transition:all .35s;position:relative}
+.step-n::before{content:'';position:absolute;inset:-4px;border-radius:50%;background:var(--g1);opacity:0;transition:opacity .35s;z-index:-1}
+.step:hover .step-n{background:var(--g1);color:#fff;border-color:transparent;transform:scale(1.08);box-shadow:0 8px 24px rgba(37,99,235,.35)}
+.step h4{font-size:17px;font-weight:700;margin-bottom:7px}
+.step p{color:var(--text2);font-size:14px;line-height:1.65;padding:0 8px}
+
+/* CTA */
+.cta-sec{position:relative;overflow:hidden}
+.cta-card{position:relative;background:linear-gradient(135deg,#eff6ff 0%,#ecfeff 50%,#f0f9ff 100%);border:1px solid #bfdbfe;border-radius:var(--r1);padding:72px 56px;text-align:center;overflow:hidden}
+.cta-card::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232563eb' fill-opacity='0.035'%3E%3Cpath d='M40 40c0-11.046 8.954-20 20-20s20 8.954 20 20-8.954 20-20 20-20-8.954-20-20zm-40 0c0-11.046 8.954-20 20-20s20 8.954 20 20-8.954 20-20 20S0 51.046 0 40z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");pointer-events:none}
+.cta-card h2{font-size:40px;font-weight:800;letter-spacing:-.025em;margin-bottom:14px;position:relative}
+.cta-card h2 .g{background:linear-gradient(135deg,#2563eb,#06b6d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.cta-card p{font-size:17px;color:var(--text2);max-width:540px;margin:0 auto 32px;line-height:1.7;position:relative}
+.cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative}
+.cta-note{margin-top:18px;font-size:12.5px;color:var(--text3);position:relative}
+
+/* FAQ */
+.faq-list{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:10px}
+.faq{background:var(--surface);border:1px solid var(--border2);border-radius:var(--r3);overflow:hidden;transition:all .3s}
+.faq:hover{border-color:var(--border3)}
+.faq.active{border-color:rgba(37,99,235,.25);box-shadow:var(--sh2)}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;padding:20px 24px;background:none;border:none;color:var(--text);font-size:15.5px;font-weight:600;cursor:pointer;text-align:left;font-family:inherit;gap:16px;transition:color .2s}
+.faq-q:hover{color:var(--p1)}
+.faq-q svg{flex-shrink:0;transition:transform .35s;color:var(--p1)}
+.faq.active .faq-q svg{transform:rotate(180deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .4s ease;padding:0 24px}
+.faq.active .faq-a{max-height:200px;padding:0 24px 20px}
+.faq-a p{color:var(--text2);font-size:14.5px;line-height:1.75}
+
+/* Footer */
+footer{border-top:1px solid var(--border);padding:56px 0 36px;background:var(--bg2)}
+.foot-in{max-width:1200px;margin:0 auto;padding:0 28px;text-align:center}
+.foot-brand{display:flex;flex-direction:column;align-items:center;gap:14px}
+.foot-brand p{color:var(--text2);font-size:14.5px;line-height:1.75;max-width:480px}
+.foot-copy{margin-top:8px;padding-top:22px;border-top:1px solid var(--border);width:100%;font-size:12.5px;color:var(--text3)}
+
+/* Reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.rv.show{opacity:1;transform:translateY(0)}
+
+@media(max-width:1024px){
+  .hero-grid{grid-template-columns:1fr;gap:48px}
+  .hv{max-width:480px;margin:0 auto;width:100%}
+  .feat-grid{grid-template-columns:repeat(2,1fr)}
+  .adv-grid{grid-template-columns:1fr;gap:56px}
+  .adv-vis{height:380px}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .steps::before{display:none}
+}
+@media(max-width:768px){
+  .nav-in{padding:0 18px;height:62px}
+  .nav-l{display:none}
+  .mbtn{display:block}
+  .wrap{padding:0 18px}
+  section{padding:80px 0}
+  .hero{padding:100px 0 70px}
+  .hero h1{font-size:36px}
+  .hero-desc{font-size:16px}
+  .hero-stats{gap:24px}
+  .stat-n{font-size:22px}
+  .h2{font-size:30px}
+  .sub{font-size:15.5px}
+  .feat-grid{grid-template-columns:1fr}
+  .feat{padding:26px 22px}
+  .steps{grid-template-columns:1fr;gap:28px}
+  .cta-card{padding:48px 22px}
+  .cta-card h2{font-size:28px}
+  .cta-card p{font-size:15.5px}
+  .hv-f1{right:0;top:-12px}
+  .hv-f2{left:0}
+  .adv-vis{height:auto}
+  .adv-card{position:relative;width:100%;margin-bottom:14px;animation:none}
+  .adv-c1,.adv-c2,.adv-c3{top:auto;right:auto;left:auto;bottom:auto}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav-in">
+    <div class="logo" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+      <div class="logo-ic">叮</div>
+      <span class="logo-t">叮当跨境ERP</span>
+    </div>
+    <ul class="nav-l">
+      <li><a href="#features">核心功能</a></li>
+      <li><a href="#advantages">产品优势</a></li>
+      <li><a href="#steps">使用流程</a></li>
+      <li><a href="#faq">常见问题</a></li>
+    </ul>
+    <div style="display:flex;gap:10px;align-items:center">
+      <a href="https://ddddnet.cn" target="_blank" class="btn btn-p">
+        立即使用
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+      <button class="mbtn" onclick="toggleM()" aria-label="菜单">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+<div class="mmenu" id="mmenu">
+  <a href="#features" onclick="toggleM()">核心功能</a>
+  <a href="#advantages" onclick="toggleM()">产品优势</a>
+  <a href="#steps" onclick="toggleM()">使用流程</a>
+  <a href="#faq" onclick="toggleM()">常见问题</a>
+  <a href="https://ddddnet.cn" target="_blank" onclick="toggleM()">立即使用</a>
+</div>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="rv">
+        <div class="hero-badge">
+          <span class="d"></span>
+          <span class="live">NEW</span>
+          <span>专为 Temu 半托管卖家打造</span>
+        </div>
+        <h1>
+          让Temu上品效率<br/>
+          <span class="hl"><span class="g">提升10倍</span></span>
+        </h1>
+        <p class="hero-desc">
+          面向 Temu 半托管卖家的一站式 POD 套图工具。批量套图、侵权查询、AI标题生成，让上品更高效。
+        </p>
+        <div class="hero-cta">
+          <a href="https://ddddnet.cn" target="_blank" class="btn btn-p btn-lg">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+            进入应用
+          </a>
+          <a href="#features" class="btn btn-g btn-lg">了解功能</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-n">10×</span><span class="stat-l">效率提升</span></div>
+          <div class="stat"><span class="stat-n">1000+</span><span class="stat-l">卖家在用</span></div>
+          <div class="stat"><span class="stat-n">99%</span><span class="stat-l">套图准确率</span></div>
+        </div>
+      </div>
+      <div class="hv rv">
+        <div class="hv-card">
+          <div class="hv-top">
+            <div class="hv-dots"><span></span><span></span><span></span></div>
+            <div class="hv-title"><span class="pulse"></span>批量套图任务 · 进行中</div>
+          </div>
+          <div class="hv-body">
+            <div class="hv-grid">
+              <div class="hv-item done"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg></div>
+              <div class="hv-item done"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+              <div class="hv-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+              <div class="hv-item done"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div>
+              <div class="hv-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+              <div class="hv-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg></div>
+              <div class="hv-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+              <div class="hv-item done"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div>
+              <div class="hv-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+            </div>
+            <div class="hv-prog">
+              <div class="hv-prog-top"><span>正在处理第 108 张 / 共 150 张</span><span>72%</span></div>
+              <div class="hv-bar"><div class="hv-fill"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="hv-float hv-f1">
+          <div class="hv-fi g"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="hv-ft"><strong>侵权检测通过</strong><span>AI智能识别</span></div>
+        </div>
+        <div class="hv-float hv-f2">
+          <div class="hv-fi b"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+          <div class="hv-ft"><strong>批量处理</strong><span>150张 / 3分钟</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="strip">
+  <div class="wrap">
+    <div class="strip-in">
+      <span class="strip-l">当前支持</span>
+      <span class="strip-tag">Temu<span class="b">半托管</span></span>
+      <span style="font-size:13px;color:var(--text3);font-weight:500">后续接入更多平台</span>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="wrap">
+    <div class="sh rv">
+      <div class="sec-div"></div>
+      <div class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>核心功能</div>
+      <h2 class="h2">专为<span class="g">Temu半托管卖家</span>打造<br/>覆盖上品全流程</h2>
+      <p class="sub">从图案管理、模板设计到批量套图、侵权检测、导出分发，一站式解决你的所有套图需求。</p>
+    </div>
+    <div class="feat-grid">
+      <div class="feat rv">
+        <div class="feat-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div>
+        <h3>批量智能套图</h3>
+        <p>一次导入多个SKU图案，批量完成"设计稿→商品图"的套版。支持主图与细节图分开处理，自动适配Temu上品要求。</p>
+      </div>
+      <div class="feat rv">
+        <div class="feat-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3>像素级精准定位</h3>
+        <p>在模板上以像素级精度摆放设计，坐标按原始图片像素记录，套图位置稳定一致。换SKU不跑偏，保证出品质量统一。</p>
+      </div>
+      <div class="feat rv">
+        <div class="feat-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+        <h3>AI侵权检测</h3>
+        <p>上品前自动进行版权与侵权风险检测，降低平台下架与投诉风险。安全区保护机制，认定的安全区域不会被误修改。</p>
+      </div>
+      <div class="feat rv">
+        <div class="feat-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <h3>实时任务进度</h3>
+        <p>套图任务实时显示进度与状态，支持SSE实时推送。大批量任务也能随时看清跑到哪一步、是否出错，心里有底。</p>
+      </div>
+      <div class="feat rv">
+        <div class="feat-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></div>
+        <h3>一键ZIP打包</h3>
+        <p>任务完成后一键打包下载ZIP。主图支持双路径输出，详情图汇总与按颜色分发两不误，直接对接你的上品流程。</p>
+      </div>
+      <div class="feat rv">
+        <div class="feat-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>第三方ERP对接</h3>
+        <p>支持妙手、店小秘等主流第三方ERP上架工具，商品与套图结果一键打通，减少跨系统搬运，让工作流更顺畅。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="advantages" class="adv-sec">
+  <div class="wrap">
+    <div class="adv-grid">
+      <div class="adv-list rv">
+        <div class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>产品优势</div>
+        <h2 class="h2" style="margin-bottom:24px">为什么选择<span class="g">叮当跨境ERP</span></h2>
+        <div class="adv-it">
+          <div class="adv-n">1</div>
+          <div><h4>全能工具箱 · 一站式解决</h4><p>不止套图，内置侵权查询、AI标题生成、实用工具集合，覆盖上品全流程，一个工具搞定所有需求。</p></div>
+        </div>
+        <div class="adv-it">
+          <div class="adv-n">2</div>
+          <div><h4>极速出图 · 批量处理</h4><p>基于Sharp高性能图形引擎，单张套图毫秒级完成。150张图仅需3分钟，效率远超手工PS。</p></div>
+        </div>
+        <div class="adv-it">
+          <div class="adv-n">3</div>
+          <div><h4>可视化模板编辑器</h4><p>拖拽式模板设计，所见即所得。支持多种填充模式（裁切/适应/拉伸/居中），复杂模板也能轻松搞定。</p></div>
+        </div>
+        <div class="adv-it">
+          <div class="adv-n">4</div>
+          <div><h4>自定义AI模型接入</h4><p>内置智谱、DeepSeek、通义千问、Kimi等多家AI供应商，支持自由切换与自定义模型接入。侵权检测、标题生成一网打尽。</p></div>
+        </div>
+      </div>
+      <div class="adv-vis rv">
+        <div class="adv-card adv-c1">
+          <div class="adv-ch">
+            <div class="adv-ci" style="background:#dcfce7;color:#16a34a"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <strong>安全检测报告</strong>
+          </div>
+          <div class="adv-cb">
+            <div class="adv-cr"><span>检测图片</span><span>150 张</span></div>
+            <div class="adv-cr"><span>通过</span><span style="color:#16a34a">148 张</span></div>
+            <div class="adv-cr"><span>风险</span><span style="color:#f59e0b">2 张</span></div>
+            <div class="adv-cr"><span>耗时</span><span>42 秒</span></div>
+          </div>
+        </div>
+        <div class="adv-card adv-c2">
+          <div class="adv-ch">
+            <div class="adv-ci" style="background:#dbeafe;color:#2563eb"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+            <strong>套图效率</strong>
+          </div>
+          <div class="adv-cb">
+            <div class="adv-cr"><span>今日套图</span><span>2,840 张</span></div>
+            <div class="adv-cr"><span>平均速度</span><span>1.2 秒/张</span></div>
+            <div class="adv-cr"><span>节省时间</span><span>≈ 8 小时</span></div>
+          </div>
+        </div>
+        <div class="adv-card adv-c3">
+          <div class="adv-ch">
+            <div class="adv-ci" style="background:#cffafe;color:#0891b2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+            <strong>AI能力</strong>
+          </div>
+          <div class="adv-cb">
+            <div class="adv-cr"><span>侵权查询</span><span>支持</span></div>
+            <div class="adv-cr"><span>标题生成</span><span>AI智能</span></div>
+            <div class="adv-cr"><span>模型接入</span><span style="color:#0891b2">自定义</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="steps">
+  <div class="wrap">
+    <div class="sh rv">
+      <div class="sec-div"></div>
+      <div class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>使用流程</div>
+      <h2 class="h2">四步上手，<span class="g">即刻出图</span></h2>
+      <p class="sub">简单直观的操作流程，无需复杂学习，进入即用。</p>
+    </div>
+    <div class="steps">
+      <div class="step rv">
+        <div class="step-n">1</div>
+        <h4>进入应用</h4>
+        <p>访问 ddddnet.cn 进入应用，即可开始你的套图工作。</p>
+      </div>
+      <div class="step rv">
+        <div class="step-n">2</div>
+        <h4>导入模板</h4>
+        <p>上传商品模板图，用可视化编辑器设定印花区域。</p>
+      </div>
+      <div class="step rv">
+        <div class="step-n">3</div>
+        <h4>批量套图</h4>
+        <p>导入SKU图案文件夹，一键启动批量任务，实时查看进度。</p>
+      </div>
+      <div class="step rv">
+        <div class="step-n">4</div>
+        <h4>导出发布</h4>
+        <p>任务完成后一键打包ZIP，直接对接Temu上品流程。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-sec">
+  <div class="wrap">
+    <div class="cta-card rv">
+      <h2>现在开始，<span class="g">释放你的上品效率</span></h2>
+      <p>批量套图、侵权查询、AI标题生成，一站式搞定你的上品需求。</p>
+      <div class="cta-btns">
+        <a href="https://ddddnet.cn" target="_blank" class="btn btn-p btn-lg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+          立即进入应用
+        </a>
+      </div>
+      <div class="cta-note">目前支持 Temu 半托管 · 后续接入更多平台 · 永久免费使用</div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="sh rv">
+      <div class="sec-div"></div>
+      <div class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>常见问题</div>
+      <h2 class="h2">你可能想<span class="g">了解的问题</span></h2>
+      <p class="sub">如果你有其他疑问，随时联系我们。</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq rv">
+        <button class="faq-q" onclick="toggleF(this)">
+          <span>叮当跨境ERP 是免费的吗？</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a"><p>是的，核心套图功能完全免费使用。AI 侵权检测和标题生成需要你配置自己的 AI 供应商 API Key（如智谱、DeepSeek 等），费用由供应商收取。</p></div>
+      </div>
+      <div class="faq rv">
+        <button class="faq-q" onclick="toggleF(this)">
+          <span>目前支持哪些平台？</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a"><p>目前主要支持 Temu 半托管模式。后续会陆续开放 Amazon、Shopee、TikTok Shop 等更多平台支持，敬请期待。</p></div>
+      </div>
+      <div class="faq rv">
+        <button class="faq-q" onclick="toggleF(this)">
+          <span>如何开始使用？</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a"><p>访问 ddddnet.cn 即可进入应用开始使用。操作简单直观，导入模板、上传图案、一键套图，几分钟即可上手。</p></div>
+      </div>
+      <div class="faq rv">
+        <button class="faq-q" onclick="toggleF(this)">
+          <span>数据安全吗？</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a"><p>平台采用 HTTPS 加密传输，所有数据安全存储。AI 检测功能仅发送必要的图片特征信息，不会泄露你的商业数据。</p></div>
+      </div>
+      <div class="faq rv">
+        <button class="faq-q" onclick="toggleF(this)">
+          <span>如何联系客服？</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a"><p>你可以通过页面底部的联系方式联系我们，或在应用内的反馈入口提交问题。我们会尽快回复。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-in">
+    <div class="foot-brand">
+      <div class="logo" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+        <div class="logo-ic">叮</div>
+        <span class="logo-t">叮当跨境ERP</span>
+      </div>
+      <p>面向 Temu 半托管卖家的 POD 智能套图工具，让上品效率提升 10 倍。批量套图、侵权查询、AI标题生成，免费使用。</p>
+      <div class="foot-copy">© 2025 叮当跨境ERP. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleM(){document.getElementById('mmenu').classList.toggle('open')}
+function toggleF(b){const i=b.parentElement;const a=i.classList.contains('active');document.querySelectorAll('.faq').forEach(f=>f.classList.remove('active'));if(!a)i.classList.add('active')}
+const obs=new IntersectionObserver(e=>{e.forEach(en=>{if(en.isIntersecting){en.target.classList.add('show')}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
+window.addEventListener('scroll',()=>{const n=document.getElementById('nav');if(window.scrollY>20)n.classList.add('scrolled');else n.classList.remove('scrolled')});
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){const h=this.getAttribute('href');if(h==='#')return;const t=document.querySelector(h);if(t){e.preventDefault();window.scrollTo({top:t.offsetTop-68,behavior:'smooth'})}})});
+</script>
+</body>
+</html>
