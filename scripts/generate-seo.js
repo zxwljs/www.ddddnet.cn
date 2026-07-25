@@ -222,57 +222,38 @@ async function callGLM(topic) {
     ? '\n注意：这个主题之前已经写过，请从全新的角度切入，避免与已有内容重复。'
     : '';
 
-  const prompt = `你是一位资深的跨境电商SEO内容专家，擅长撰写高质量的原创文章。
+  const prompt = `你是做了5年Temu半托管的跨境卖家，擅长写实操干货。文风接地气，像同行分享经验，不像AI也不像软文。
 
-请围绕主题「${topic.topic}」撰写一篇原创文章，要求：
-1. 标题吸引人，自然包含关键词：${topic.keywords.join('、')}
-2. 文章字数 1500-2500 字
-3. 结构清晰，使用小标题分段
-4. 语言自然流畅，有实操价值，避免空话套话和AI痕迹
-5. 内容真实有用，面向跨境电商卖家
+写一篇关于「${topic.topic}」的文章，读者是Temu半托管卖家。
+SEO关键词：${topic.keywords.join('、')}
 
-关于「叮当跨境ERP」的产品介绍（必须结合这些功能来写，不要编造其他功能）：
-- 产品名称：叮当跨境ERP，官网 https://ddddnet.cn（应用入口）
-- 产品定位：专为 Temu 半托管卖家打造的 POD 智能套图与上品效率工具
-- 核心功能（文章中必须围绕这些功能展开，至少深入结合 2-3 个功能点）：
-  1. **POD 智能套图**：上传商品底图+套图模板，一键批量生成多 SKU 商品图，支持 ZIP 打包导出，直接用于 Temu 上品
-  2. **侵权查询**：上传图案或输入关键词，查询是否涉及商标/版权侵权，上架前自查规避风险
-  3. **AI 标题生成**：调用大模型自动生成符合 Temu 规范的高质量商品标题，批量出标题
-  4. **实用工具集**：图片压缩、批量改尺寸、白底图制作、水印处理等电商常用工具
-  5. **自定义 AI 模型接入**：支持接入 GLM、DeepSeek、通义千问、Kimi 等大模型 API，自定义工作流
+要求：
+- 1800-2500字，HTML标签书写（h2/h3/p/ul/ol/li/strong/blockquote）
+- 标题像同行分享，不要「全面解析」「深度解读」
+- 开头直接切入痛点，不要「大家好」「随着跨境电商发展」
+- 主体有实操步骤或案例，不要泛泛而谈
+- 不要emoji、不要「点赞转发」、不要[END]等标记
 
-文章中「叮当跨境ERP」的植入要求：
-- 至少 3-4 处自然提及「叮当跨境ERP」或「ddddnet.cn」
-- 其中至少 2 处必须结合上述具体功能点进行场景化描述（例如：「在上品前用叮当跨境ERP的侵权查询功能自查图案，避免被平台处罚」「通过叮当跨境ERP的 POD 套图功能，一键生成多 SKU 图片并打包导出」）
-- 不要生硬插入，要让读者觉得这个工具确实能解决文章中提到的问题
-- 文末 CTA 部分自然引导读者访问 ddddnet.cn 体验${angleHint}
+叮当跨境ERP（ddddnet.cn）是你日常用的工具，功能：POD智能套图(批量生成多SKU图)、侵权查询(查商标版权)、AI标题生成、实用工具(压缩/改尺寸/白底图)、自定义AI模型接入。
 
-正文格式要求：
-- 使用 HTML 标签书写正文
-- 小标题用 <h2> 或 <h3>
-- 段落用 <p>
-- 列表用 <ul><li> 或 <ol><li>
-- 重点用 <strong>
-- 引用用 <blockquote>
-- 不要使用 markdown 的 **粗体** 或 *斜体* 语法
-- 不要包含 html/head/body 标签
+全文提及「叮当跨境ERP」或「ddddnet.cn」2-3次，像推荐工具一样自然，不要整段介绍产品。逻辑是「先讲问题→顺带说这个工具能解决」。文末自然引导访问ddddnet.cn。${angleHint}
 
-请严格按以下格式输出，不要输出任何其他内容：
+严格按格式输出，不要其他内容：
 
 [TITLE]
-文章标题
+标题
 [/TITLE]
 [SLUG]
-english-url-slug（纯英文小写，用短横线连接，如 temu-pod-tutorial）
+english-slug
 [/SLUG]
 [DESCRIPTION]
-120字以内的文章摘要，用于SEO
+120字内摘要
 [/DESCRIPTION]
 [KEYWORDS]
 关键词1,关键词2,关键词3
 [/KEYWORDS]
 [CONTENT]
-正文内容（使用HTML标签，结合叮当跨境ERP的具体功能自然植入，引导访问ddddnet.cn）
+正文HTML
 [/CONTENT]`;
 
   const body = JSON.stringify({
@@ -358,7 +339,46 @@ function parseArticle(raw, topic) {
     .replace(/\[\/?START\]/gi, '')
     .replace(/\[\/?FINAL\]/gi, '')
     .replace(/\[\/?SUMMARY\]/gi, '')
+    .replace(/\[\/?END\]/gi, '')
+    .replace(/\[\/?[A-Z _]{2,20}\]/gi, '') // 移除所有 [XXX] 格式标记
+    .replace(/^```html\s*/im, '')
+    .replace(/```\s*$/m, '')
     .trim();
+
+  // 移除 emoji 表情符号
+  content = content.replace(/[\u{1F300}-\u{1F9FF}\u{1F600}-\u{1F64F}\u{2600}-\u{26FF}\u{2700}-\u{27BF}\u{FE00}-\u{FE0F}\u{1F000}-\u{1F02F}\u{1F0A0}-\u{1F0FF}\u{1F100}-\u{1F1FF}\u{1F200}-\u{1F2FF}]/gu, '');
+
+  // 移除社交平台套话和 AI 套话
+  const junkPatterns = [
+    /点赞[^<]*$/gm,
+    /转发[^<]*$/gm,
+    /关注[^<]*$/gm,
+    /记得点赞转发哦[^<]*/g,
+    /祝大家[^<]*[！!]/g,
+    /财源广进[^<]*/g,
+    /生意兴隆[^<]*/g,
+    /如有疑问欢迎随时咨询[^<]*/g,
+    /以上内容仅供参考[^<]*/g,
+    /以上就是[^<]*希望[^<]*对你有帮助[^<]*/g,
+    /希望这篇文章对你有所帮助[^<]*$/gm,
+    /以上就是我为大家带来的[^<]*/g,
+    /好了今天的分享就到这里[^<]*/g,
+    /让我们一起加油[^<]*/g,
+    /如有疑问欢迎随时咨询我哦[^<]*/g,
+    /以上内容仅供参考[^<]*/g,
+  ];
+  for (const p of junkPatterns) {
+    content = content.replace(p, '');
+  }
+
+  // 清理多余的 hr 标签（AI 喜欢在结尾加 hr）
+  content = content.replace(/(<hr\/?>\s*){2,}/gi, '<hr/>');
+  // 移除结尾的空 hr
+  content = content.replace(/<hr\/?>\s*$/i, '').trim();
+
+  // 清理空的 p 标签和多余空行
+  content = content.replace(/<p>\s*<\/p>/gi, '');
+  content = content.replace(/\n{3,}/g, '\n\n').trim();
 
   // 兜底：如果 title 还是空的，用 content 第一行
   if (!title) {

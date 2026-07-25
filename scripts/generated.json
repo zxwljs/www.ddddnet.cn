@@ -3,7 +3,9 @@
     "跨境电商多店铺管理技巧",
     "电商场景图拍摄与后期处理",
     "AI侵权检测在跨境电商中的应用",
-    "套图导出ZIP打包的正确方式"
+    "自定义AI模型接入与配置指南",
+    "Temu新品如何快速获取流量",
+    "如何用套图工具提升上品速度"
   ],
   "titles": [],
   "posts": [
@@ -53,23 +55,51 @@
       ]
     },
     {
-      "slug": "batch-exporting-suite-images-zip-packaging",
-      "title": "如何正确地批量导出套图并使用ZIP打包：提升Temu店铺运营效率的秘诀",
-      "description": "本文将详细介绍如何利用叮当跨境ERP中的POD智能套图功能高效地进行套图导出及ZIP打包，帮助跨境电商卖家快速提升Temu店铺运营效率。",
+      "slug": "temu-custom-ai-model-integration-guide",
+      "title": "Temu半托管卖家如何快速接入并配置自定义AI模型？实战指南",
+      "description": "作为Temu半托管的卖家，你是否曾为如何高效地接入和配置自定义AI模型而感到困惑？本文将为你详细介绍如何在Temu平台中实现这一目标，并结合叮当跨境ERP的实际案例，让你轻松掌握AI模型的实用技巧。",
+      "category": "AI工具",
+      "date": "2026-07-25",
+      "keywords": [
+        "Temu",
+        "自定义AI模型",
+        "API配置",
+        "叮当跨境ERP"
+      ]
+    },
+    {
+      "slug": "temu-new-product-traffic",
+      "title": "Temu 新品如何快速获取流量？半托卖家必看实操指南",
+      "description": "揭秘Temu半托管卖家如何利用叮当跨境ERP高效管理店铺，快速获取新品流量！从选品到上架，再到推广引流，全方位实战技巧等你来学！",
+      "category": "Temu运营",
+      "date": "2026-07-25",
+      "keywords": [
+        "Temu流量",
+        "Temu新品推广",
+        "Temu运营",
+        "Temu半托管卖家",
+        "Temu店铺管理",
+        "叮当跨境ERP",
+        "POD智能套图",
+        "AI标题生成"
+      ]
+    },
+    {
+      "slug": "temu-half-remote-cross-border-vendor-guide-to-increase-upload-speed-with-image-suite-tools",
+      "title": "如何使用套图工具快速提升上品速度？Temu半托管卖家的实战指南！",
+      "description": "对于Temu半托管的跨境卖家来说，提高商品的上传速度至关重要。本文将详细介绍如何利用套图工具来优化这一过程，并提供具体的操作步骤和实际案例，帮助您更快更高效地管理您的商品图片。",
       "category": "POD套图",
       "date": "2026-07-25",
       "keywords": [
-        "套图导出",
-        "ZIP打包",
-        "批量下载",
-        "叮当跨境ERP",
-        "Temu半托管",
-        "POD智能套图",
-        "侵权查询",
-        "AI标题生成",
-        "实用工具集"
+        "套图工具",
+        "上品速度",
+        "批量出图",
+        "Temu",
+        "跨境电商",
+        "图片管理",
+        "商品上传"
       ]
     }
   ],
-  "count": 4
+  "count": 6
 }
