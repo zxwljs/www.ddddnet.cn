@@ -21,7 +21,8 @@
     "POD设计中的合理使用边界",
     "AI生成内容如何通过平台审核",
     "AI生成商品标题技巧与最佳实践",
-    "跨境电商SaaS工具生态分析"
+    "跨境电商SaaS工具生态分析",
+    "跨境电商选品方法论与工具"
   ],
   "titles": [],
   "posts": [
@@ -354,7 +355,20 @@
         "叮当跨境ERP",
         "ddddnet.cn"
       ]
+    },
+    {
+      "slug": "cross-border-selection-methodology-and-tools-for-temu-semi-trusted-sellers",
+      "title": "跨境电商选品方法论与工具： Temu半托管卖家的实战指南",
+      "description": "作为Temu半托管卖家，你是否在为选品烦恼？本文将为你揭示跨境电商选品的秘诀和实用的工具，助你在竞争激烈的市场中脱颖而出！",
+      "category": "跨境干货",
+      "date": "2026-07-25",
+      "keywords": [
+        "跨境选品",
+        "选品方法",
+        "选品工具",
+        "Temu半托管"
+      ]
     }
   ],
-  "count": 22
+  "count": 23
 }
