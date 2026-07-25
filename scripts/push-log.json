@@ -1,24 +1,25 @@
 {
-  "updatedAt": "2026-07-25T03:15:30.873Z",
-  "urlCount": 5,
+  "updatedAt": "2026-07-25T03:51:09.557Z",
+  "urlCount": 6,
   "urls": [
     "https://www.ddddnet.cn/blog/",
     "https://www.ddddnet.cn/sitemap.xml",
     "https://www.ddddnet.cn/blog/posts/efficient-multiple-cross-border-store-management-dingdangcrossbordererp-helps-easy-operation.html",
     "https://www.ddddnet.cn/blog/posts/ecommerce-scene-image-shoot-post-process-guide.html",
-    "https://www.ddddnet.cn/blog/posts/cross-border-ecommerce-independent-store-platform-comparison.html"
+    "https://www.ddddnet.cn/blog/posts/ai-infringement-detection-cross-border-ecommerce-dingdang-crm.html",
+    "https://www.ddddnet.cn/blog/posts/batch-exporting-suite-images-zip-packaging.html"
   ],
   "results": {
     "indexnow": {
       "success": true,
       "status": 200,
       "endpoint": "https://api.indexnow.org/indexnow",
-      "urlCount": 5
+      "urlCount": 6
     },
     "baidu": {
-      "success": true,
-      "pushed": 5,
-      "remaining": 1
+      "success": false,
+      "error": 400,
+      "message": "over quota"
     }
   }
 }
