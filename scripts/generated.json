@@ -16,7 +16,8 @@
     "如何快速制作多SKU商品图",
     "POD按需印刷商业模式解析",
     "POD按需印刷市场前景与机会",
-    "POD套图中主图与细节图的处理方法"
+    "POD套图中主图与细节图的处理方法",
+    "DeepSeek模型在电商运营中的用法"
   ],
   "titles": [],
   "posts": [
@@ -274,7 +275,22 @@
         "叮当跨境ERP",
         "批量生成"
       ]
+    },
+    {
+      "slug": "deepseek-model-in-ecommerce-operation-guide-for-temu-platform",
+      "title": "DeepSeek模型在电商运营中的应用：提升Temu平台销售效率的实战指南",
+      "description": "本文将深入探讨DeepSeek模型在Temu电商平台运营中的应用，通过实际操作步骤和案例分享，帮助卖家提高销售效率和竞争力。同时，我们将介绍如何利用叮当跨境ERP这一强大工具来辅助DeepSeek模型的应用，为您的电商运营带来更多优势。",
+      "category": "AI工具",
+      "date": "2026-07-25",
+      "keywords": [
+        "DeepSeek模型",
+        "电商运营",
+        "Temu",
+        "跨境电商",
+        "叮当跨境ERP",
+        "AI模型应用"
+      ]
     }
   ],
-  "count": 17
+  "count": 18
 }
