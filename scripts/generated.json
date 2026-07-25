@@ -6,7 +6,8 @@
     "自定义AI模型接入与配置指南",
     "Temu新品如何快速获取流量",
     "如何用套图工具提升上品速度",
-    "电商图片素材管理与分类方法"
+    "电商图片素材管理与分类方法",
+    "套图导出ZIP打包的正确方式"
   ],
   "titles": [],
   "posts": [
@@ -113,7 +114,21 @@
         "文件分类",
         "叮当跨境ERP"
       ]
+    },
+    {
+      "slug": "correct-way-to-export-and-zip-bundle-in-temu-semi-managed-cross-border-selling",
+      "title": "如何正确进行套图导出与ZIP打包？Temu半托管卖家的实战指南",
+      "description": "作为Temu半托管的跨境卖家，你是否经常遇到商品图片导出和ZIP打包的困扰？本文将为你详细解答如何高效地进行套图导出与ZIP打包，并推荐一款强大的跨境ERP工具——叮当跨境ERP来帮助你轻松应对这些难题。",
+      "category": "POD套图",
+      "date": "2026-07-25",
+      "keywords": [
+        "套图导出",
+        "ZIP打包",
+        "批量下载",
+        "Temu半托管",
+        "叮当跨境ERP"
+      ]
     }
   ],
-  "count": 7
+  "count": 8
 }
