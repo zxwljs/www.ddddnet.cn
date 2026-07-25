@@ -1,20 +1,21 @@
 {
-  "updatedAt": "2026-07-25T03:51:09.557Z",
-  "urlCount": 6,
+  "updatedAt": "2026-07-25T03:56:24.030Z",
+  "urlCount": 7,
   "urls": [
     "https://www.ddddnet.cn/blog/",
     "https://www.ddddnet.cn/sitemap.xml",
-    "https://www.ddddnet.cn/blog/posts/efficient-multiple-cross-border-store-management-dingdangcrossbordererp-helps-easy-operation.html",
-    "https://www.ddddnet.cn/blog/posts/ecommerce-scene-image-shoot-post-process-guide.html",
     "https://www.ddddnet.cn/blog/posts/ai-infringement-detection-cross-border-ecommerce-dingdang-crm.html",
-    "https://www.ddddnet.cn/blog/posts/batch-exporting-suite-images-zip-packaging.html"
+    "https://www.ddddnet.cn/blog/posts/temu-custom-ai-model-integration-guide.html",
+    "https://www.ddddnet.cn/blog/posts/temu-new-product-traffic.html",
+    "https://www.ddddnet.cn/blog/posts/temu-half-remote-cross-border-vendor-guide-to-increase-upload-speed-with-image-suite-tools.html",
+    "https://www.ddddnet.cn/blog/posts/ecommerce-image-materials-management-and-categorization-methods.html"
   ],
   "results": {
     "indexnow": {
       "success": true,
       "status": 200,
       "endpoint": "https://api.indexnow.org/indexnow",
-      "urlCount": 6
+      "urlCount": 7
     },
     "baidu": {
       "success": false,
