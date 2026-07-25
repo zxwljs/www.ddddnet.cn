@@ -110,9 +110,9 @@ module.exports = {
     { topic: '商品图片防盗图与版权保护', keywords: ['防盗图', '版权保护', '电商图片'], category: '实用技巧' },
 
     // ===== 行业趋势 =====
-    { topic: '2025年跨境电商行业趋势分析', keywords: ['跨境电商', '行业趋势', '2025'], category: '行业趋势' },
+    { topic: '2026年跨境电商行业趋势分析', keywords: ['跨境电商', '行业趋势', '2026'], category: '行业趋势' },
     { topic: 'POD按需印刷市场前景与机会', keywords: ['POD', '按需印刷', '市场前景'], category: '行业趋势' },
-    { topic: 'Temu平台2025年政策变化解读', keywords: ['Temu政策', '平台变化', '2025'], category: '行业趋势' },
+    { topic: 'Temu平台2026年政策变化解读', keywords: ['Temu政策', '平台变化', '2026'], category: '行业趋势' },
     { topic: 'AI技术如何改变跨境电商', keywords: ['AI技术', '跨境电商', '技术变革'], category: '行业趋势' },
     { topic: '跨境电商自动化工具发展趋势', keywords: ['自动化工具', '跨境电商', '趋势'], category: '行业趋势' },
     { topic: '半托管模式会成为主流吗', keywords: ['半托管', '电商模式', '趋势'], category: '行业趋势' },
