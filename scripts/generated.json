@@ -15,7 +15,8 @@
     "电商图片SEO优化技巧",
     "如何快速制作多SKU商品图",
     "POD按需印刷商业模式解析",
-    "POD按需印刷市场前景与机会"
+    "POD按需印刷市场前景与机会",
+    "POD套图中主图与细节图的处理方法"
   ],
   "titles": [],
   "posts": [
@@ -258,7 +259,22 @@
         "Temu半托管",
         "跨境电商"
       ]
+    },
+    {
+      "slug": "pod-kit-main-image-and-detail-image-handling-methods",
+      "title": "POD套图中主图与细节图的正确处理方法",
+      "description": "本文将详细介绍如何在Temu平台中正确处理POD套图的主图和细节图，帮助卖家提高商品展示效果，提升销量。通过叮当跨境ERP等工具，轻松实现高效管理。",
+      "category": "POD套图",
+      "date": "2026-07-25",
+      "keywords": [
+        "POD套图",
+        "主图",
+        "细节图",
+        "Temu",
+        "叮当跨境ERP",
+        "批量生成"
+      ]
     }
   ],
-  "count": 16
+  "count": 17
 }
