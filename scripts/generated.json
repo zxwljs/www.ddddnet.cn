@@ -1,7 +1,8 @@
 {
   "usedTopics": [
     "跨境电商多店铺管理技巧",
-    "电商场景图拍摄与后期处理"
+    "电商场景图拍摄与后期处理",
+    "跨境电商独立站与平台对比"
   ],
   "titles": [],
   "posts": [
@@ -33,7 +34,22 @@
         "叮当跨境ERP",
         "ddddnet.cn"
       ]
+    },
+    {
+      "slug": "cross-border-ecommerce-independent-store-platform-comparison",
+      "title": "跨境电商独立站与平台的全面对比：如何选择最适合自己的商业模式？",
+      "description": "本文深入探讨跨境电商独立站与平台模式的优缺点，为卖家提供决策参考。涵盖成本、控制力、品牌建设、客户关系等关键因素。结合实际案例，帮助您做出明智选择。",
+      "category": "跨境干货",
+      "date": "2026-07-25",
+      "keywords": [
+        "跨境电商",
+        "独立站",
+        "平台对比",
+        "跨境电商模式",
+        "叮当跨境ERP",
+        "ddddnet.cn"
+      ]
     }
   ],
-  "count": 2
+  "count": 3
 }
