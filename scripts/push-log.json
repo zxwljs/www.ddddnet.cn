@@ -1,0 +1,23 @@
+{
+  "updatedAt": "2026-07-25T03:14:35.794Z",
+  "urlCount": 4,
+  "urls": [
+    "https://www.ddddnet.cn/blog/",
+    "https://www.ddddnet.cn/sitemap.xml",
+    "https://www.ddddnet.cn/blog/posts/efficient-multiple-cross-border-store-management-dingdangcrossbordererp-helps-easy-operation.html",
+    "https://www.ddddnet.cn/blog/posts/ecommerce-scene-image-shoot-post-process-guide.html"
+  ],
+  "results": {
+    "indexnow": {
+      "success": true,
+      "status": 200,
+      "endpoint": "https://api.indexnow.org/indexnow",
+      "urlCount": 4
+    },
+    "baidu": {
+      "success": false,
+      "skipped": true,
+      "reason": "未配置 BAIDU_TOKEN"
+    }
+  }
+}

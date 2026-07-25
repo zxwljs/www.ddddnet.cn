@@ -189,6 +189,43 @@ Google 不支持主动 URL 推送，通过 sitemap 自动发现，**只需配置
 - **博客列表**：每次生成后自动重建，带分页（每页 10 篇）
 - **sitemap**：每次生成后自动更新
 
+### 查看推送状态
+
+每次推送完成后，系统会自动生成一份详细的推送日志，你可以随时通过以下 URL 查看：
+
+```
+https://www.ddddnet.cn/scripts/push-log.json
+```
+
+日志内容示例：
+```json
+{
+  "updatedAt": "2026-07-25T03:00:00.000Z",
+  "urlCount": 5,
+  "results": {
+    "indexnow": {
+      "success": true,
+      "status": 202,
+      "endpoint": "https://api.indexnow.org/indexnow",
+      "urlCount": 5
+    },
+    "baidu": {
+      "success": true,
+      "pushed": 5,
+      "remaining": 999995
+    }
+  }
+}
+```
+
+**字段说明**：
+- `indexnow.success`: Bing/IndexNow 推送是否成功
+- `baidu.success`: 百度推送是否成功
+- `baidu.pushed`: 本次成功推送到百度的 URL 数量
+- `baidu.remaining`: 百度 API 剩余配额
+
+> 💡 每次新文章生成后，该日志文件会自动更新为最新状态。
+
 ## 自定义修改
 
 | 要改什么 | 在哪里改 |
