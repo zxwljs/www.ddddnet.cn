@@ -57,6 +57,7 @@ jobs:
         if: success() && steps.check.outputs.skip != 'true'
         env:
           BAIDU_TOKEN: ${{ secrets.BAIDU_TOKEN }}
+          BING_API_KEY: ${{ secrets.BING_API_KEY }}
         run: node scripts/push-seo.js
 
       - name: 提交并推送 (含日志)

@@ -17,6 +17,7 @@ website/
 ├── sitemap.xml                             # 站点地图（自动更新）
 ├── _redirects                              # Cloudflare Pages 路由配置（SPA fallback）
 ├── a3f8c2d9e7b14f6a8c2d9e7b14f6a8c2.txt    # IndexNow 密钥文件（Bing 推送校验用）
+├── BingSiteAuth.xml                            # 必应 Webmaster 站点验证文件
 ├── README.md                               # 本文档
 ├── blog/                                   # SEO 博客（自动生成）
 │   ├── index.html                          # 博客列表首页（第 1 页，带分页）
@@ -26,7 +27,7 @@ website/
 │       └── xxx.html
 ├── scripts/                                # 自动化脚本
 │   ├── generate-seo.js                     # 调用 GLM-4V-Flash 生成文章
-│   ├── push-seo.js                         # 推送到 Bing / 百度（百度每 24h 一次，避免超配额）
+│   ├── push-seo.js                         # 推送到 Bing (IndexNow + URL Submission API) / 百度
 │   ├── topics.js                            # 静态选题库（97 个）
 │   ├── topics-hot.json                     # 动态热点选题（每 7 天更新，GitHub Actions 运行时生成）
 │   ├── generated.json                      # 已生成文章记录（运行时，本地不入库）
@@ -108,6 +109,7 @@ GitHub Actions (每小时)
    │
    └─ 3. push-seo.js  推送到搜索引擎
          ├─ IndexNow → Bing / Yandex (开箱即用)
+         ├─ Bing URL Submission API (需配置 BING_API_KEY)
          └─ 百度普通收录 API (需配置 BAIDU_TOKEN)
 ```
 
@@ -124,11 +126,33 @@ GitHub Actions (每小时)
 
 ### 搜索引擎推送配置
 
-#### 1. Bing（已配置，开箱即用） ✅
+#### 1. Bing（三层推送，开箱即用 + 可选增强）
 
-通过 [IndexNow 协议](https://www.indexnow.org/) 主动推送，密钥文件 `a3f8c2d9e7b14f6a8c2d9e7b14f6a8c2.txt` 已放在网站根目录，**无需任何额外配置**。每次生成文章后自动推送博客首页 + 最近 5 篇文章 URL 到 Bing。
+Bing 采用三层推送机制，确保 URL 被快速收录：
+
+**第一层：IndexNow 协议（已配置，开箱即用）✅**
+
+通过 [IndexNow 协议](https://www.indexnow.org/) 主动推送，密钥文件 `a3f8c2d9e7b14f6a8c2d9e7b14f6a8c2.txt` 已放在网站根目录，**无需任何额外配置**。每次生成文章后自动推送博客首页 + 最近 5 篇文章 URL。
 
 如需验证密钥，访问 `https://www.ddddnet.cn/a3f8c2d9e7b14f6a8c2d9e7b14f6a8c2.txt` 应返回该密钥字符串。
+
+**第二层：Bing URL Submission API（可选，加速收录）⚠️**
+
+Bing 提供了更直接的 URL 提交 API，可以加速收录速度。配置步骤：
+
+1. 访问 [Bing Webmaster Tools](https://www.bing.com/webmasters) → 登录（使用 Microsoft 账号）
+2. 确认站点 `www.ddddnet.cn` 已验证（`BingSiteAuth.xml` 已存在）
+3. 点击右上角齿轮图标 → **API Access** → **Get My API Key**
+4. 复制生成的 API Key
+5. 回到 GitHub 仓库 → **Settings** → **Secrets and variables** → **Actions**
+6. **New repository secret**，Name 填 `BING_API_KEY`，Secret 粘贴刚才复制的 API Key
+7. 保存。下次 GitHub Actions 运行时自动生效
+
+> 💡 未配置 `BING_API_KEY` 时脚本会自动跳过 Bing URL 提交，不影响 IndexNow 推送和文章生成。
+
+**第三层：sitemap.xml（已配置）✅**
+
+Bing 会自动定期抓取 `sitemap.xml`，确保所有页面被发现。
 
 #### 2. 百度（需配置 BAIDU_TOKEN）⚠️
 
@@ -171,7 +195,8 @@ Google 不支持主动 URL 推送，通过 sitemap 自动发现，**只需配置
 | 配置项 | 在哪里配置 | 名称 | 值 | 是否必需 |
 |--------|-----------|------|-----|---------|
 | AI 文章生成 | GitHub Secrets | `BIGMODEL_API_KEY` | 智谱 API Key | ✅ 必需 |
-| Bing 推送 | — | — | — | ✅ 已内置 |
+| Bing IndexNow | — | — | — | ✅ 已内置 |
+| Bing URL 提交 | GitHub Secrets | `BING_API_KEY` | Bing Webmaster API Key | ⬜ 可选 |
 | 百度推送 | GitHub Secrets | `BAIDU_TOKEN` | 百度资源平台 token | ⬜ 可选 |
 | Google 收录 | Search Console | — | 提交 sitemap.xml | ⬜ 一次性 |
 
@@ -210,6 +235,11 @@ https://www.ddddnet.cn/scripts/push-log.json
       "endpoint": "https://api.indexnow.org/indexnow",
       "urlCount": 5
     },
+    "bing": {
+      "success": true,
+      "status": 200,
+      "urlCount": 5
+    },
     "baidu": {
       "success": true,
       "pushed": 5,
@@ -221,6 +251,7 @@ https://www.ddddnet.cn/scripts/push-log.json
 
 **字段说明**：
 - `indexnow.success`: Bing/IndexNow 推送是否成功
+- `bing.success`: Bing URL Submission API 推送是否成功
 - `baidu.success`: 百度推送是否成功
 - `baidu.pushed`: 本次成功推送到百度的 URL 数量
 - `baidu.remaining`: 百度 API 剩余配额
