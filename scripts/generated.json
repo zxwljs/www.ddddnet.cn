@@ -34,7 +34,8 @@
     "Temu选品技巧与爆款挖掘方法",
     "通义千问模型电商场景应用实战",
     "Temu半托管卖家如何提升上架效率",
-    "POD卖家如何建立侵权防御体系"
+    "POD卖家如何建立侵权防御体系",
+    "POD套图质量检查标准与流程"
   ],
   "titles": [],
   "posts": [
@@ -546,7 +547,22 @@
         "防御体系",
         "风险管理"
       ]
+    },
+    {
+      "slug": "temu-semi-remote-pod-bundle-quality-inspection-standards-and-process-share",
+      "title": "Temu半托管卖家的POD套图质量检查标准与流程分享",
+      "description": "本文将详细介绍Temu半托管平台上的POD（Print on Demand）商品套图的质量检查标准和实际操作流程。通过详细的步骤和案例分析，帮助您确保您的产品图片符合平台要求，避免因质量问题导致的退货和罚款。同时，我们将介绍如何利用叮当跨境ERP等工具提高工作效率。",
+      "category": "POD套图",
+      "date": "2026-07-26",
+      "keywords": [
+        "Temu半托管",
+        "POD套图",
+        "质量检查",
+        "跨境电商",
+        "叮当跨境ERP",
+        "图片质量"
+      ]
     }
   ],
-  "count": 35
+  "count": 36
 }
