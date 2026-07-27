@@ -42,7 +42,8 @@
     "妙手ERP上架操作完整教程",
     "批量套图工具对比与选择",
     "跨境卖家如何做竞品分析",
-    "Temu半托管物流发货注意事项"
+    "Temu半托管物流发货注意事项",
+    "Temu半托管售后处理与评分维护"
   ],
   "titles": [],
   "posts": [
@@ -672,7 +673,21 @@
         "物流发货",
         "发货流程"
       ]
+    },
+    {
+      "slug": "temu-half-fulfillment-after-sales-and-reputation-maintenance-guide",
+      "title": "Temu半托管售后处理与评分维护实战指南",
+      "description": "作为Temu半托管的跨境卖家，如何高效处理售后和维持高评分是关键挑战？本文将详细介绍售后处理流程、客户沟通技巧以及评分维护策略，并结合实际操作案例和叮当跨境ERP的使用方法，帮助您提升店铺运营效率。",
+      "category": "Temu运营",
+      "date": "2026-07-27",
+      "keywords": [
+        "Temu售后",
+        "评分维护",
+        "Temu半托管",
+        "叮当跨境ERP",
+        "跨境卖家"
+      ]
     }
   ],
-  "count": 43
+  "count": 44
 }
