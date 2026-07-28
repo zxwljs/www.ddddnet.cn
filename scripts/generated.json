@@ -57,7 +57,8 @@
     "跨境电商供应链数字化升级",
     "跨境电商自动化工具发展趋势",
     "2026年跨境电商行业趋势分析",
-    "如何避免POD图案的版权纠纷"
+    "如何避免POD图案的版权纠纷",
+    "图案侵权自查工具与使用方法"
   ],
   "titles": [],
   "posts": [
@@ -912,7 +913,22 @@
         "Temu",
         "叮当跨境ERP"
       ]
+    },
+    {
+      "slug": "temu-semi-trusted-cross-border-pattern-infringement-self-inspection-tool-and-use-methods",
+      "title": "Temu 半托管卖家的图案侵权自查工具与使用方法",
+      "description": "对于 Temu 半托管的跨境卖家来说，避免图案侵权是运营成功的关键之一。本文将详细介绍如何利用叮当跨境ERP中的侵权查询工具进行自查，并分享一些实际操作经验和注意事项。",
+      "category": "侵权规避",
+      "date": "2026-07-28",
+      "keywords": [
+        "图案侵权",
+        "自查工具",
+        "侵权查询",
+        "Temu",
+        "跨境电商",
+        "叮当跨境ERP"
+      ]
     }
   ],
-  "count": 58
+  "count": 59
 }
