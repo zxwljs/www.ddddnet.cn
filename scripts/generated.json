@@ -66,7 +66,8 @@
     "店小秘ERP使用指南与技巧",
     "电商图片压缩与格式选择",
     "Temu半托管定价策略与利润计算",
-    "GLM大模型在跨境电商中的应用"
+    "GLM大模型在跨境电商中的应用",
+    "用AI批量生成商品描述的方法"
   ],
   "titles": [],
   "posts": [
@@ -1055,7 +1056,22 @@
         "商品标题",
         "侵权检测"
       ]
+    },
+    {
+      "slug": "ai-batch-generate-product-descriptions-temu-semi-managed-sellers",
+      "title": "用AI批量生成商品描述，让Temu半托管卖家轻松管理listing",
+      "description": "你是否为Temu平台上的大量商品描述编写感到烦恼？本文将详细介绍如何利用AI工具高效生成商品描述，提升工作效率，并减少重复劳动。同时，我们将探讨使用叮当跨境ERP中的AI功能来优化你的商品描述。",
+      "category": "AI工具",
+      "date": "2026-07-29",
+      "keywords": [
+        "Temu半托管卖家",
+        "AI批量生成",
+        "商品描述",
+        "效率工具",
+        "叮当跨境ERP",
+        "listing管理"
+      ]
     }
   ],
-  "count": 67
+  "count": 68
 }
