@@ -76,7 +76,8 @@
     "跨境ERP工具对比：妙手、店小秘等",
     "中国卖家出海的新机遇与挑战",
     "跨境电商知识产权保护入门",
-    "如何用AI优化商品详情页文案"
+    "如何用AI优化商品详情页文案",
+    "Temu侵权检测方法与自查流程"
   ],
   "titles": [],
   "posts": [
@@ -1203,7 +1204,19 @@
         "跨境电商",
         "AI优化"
       ]
+    },
+    {
+      "slug": "temu-infringement-detection-methods-and-self-inspection-process",
+      "title": "Temu侵权检测方法与自查流程",
+      "description": "作为Temu半托管卖家，了解并掌握有效的侵权检测方法和自查流程至关重要。本文将详细介绍如何利用叮当跨境ERP等工具进行侵权检测，确保您的店铺运营合规安全。",
+      "category": "侵权规避",
+      "date": "2026-07-30",
+      "keywords": [
+        "Temu侵权",
+        "侵权检测",
+        "自查"
+      ]
     }
   ],
-  "count": 77
+  "count": 78
 }

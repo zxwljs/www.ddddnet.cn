@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-07-30T10:12:51.577Z",
+  "updatedAt": "2026-07-30T12:23:13.397Z",
   "urlCount": 7,
   "urls": [
     "https://www.ddddnet.cn/blog/",
     "https://www.ddddnet.cn/sitemap.xml",
-    "https://www.ddddnet.cn/blog/posts/batch-image-resize-tools-methods.html",
     "https://www.ddddnet.cn/blog/posts/cross-border-erp-tools-comparison-dingdang-erp-miaoshou-and-dianxiaomei.html",
     "https://www.ddddnet.cn/blog/posts/chinese-seller-sea-new-opportunity-challenge.html",
     "https://www.ddddnet.cn/blog/posts/cross-border-e-commerce-intellectual-property-protection-basics.html",
-    "https://www.ddddnet.cn/blog/posts/temu-ai-optimized-product-page-copywriting.html"
+    "https://www.ddddnet.cn/blog/posts/temu-ai-optimized-product-page-copywriting.html",
+    "https://www.ddddnet.cn/blog/posts/temu-infringement-detection-methods-and-self-inspection-process.html"
   ],
   "results": {
     "indexnow": {
@@ -24,9 +24,8 @@
     },
     "baidu": {
       "success": false,
-      "skipped": true,
-      "reason": "24h 降频跳过",
-      "lastPushedAt": "2026-07-29T10:29:48.605Z"
+      "error": 400,
+      "message": "over quota"
     }
   }
 }
