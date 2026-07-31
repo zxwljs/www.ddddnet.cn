@@ -91,7 +91,8 @@
     "AI技术如何改变跨境电商",
     "AI套图工具如何提升设计效率",
     "跨境电商卖家工具链搭建",
-    "POD套图模板设计入门指南"
+    "POD套图模板设计入门指南",
+    "AI在POD图案设计中的创意应用"
   ],
   "titles": [],
   "posts": [
@@ -1440,7 +1441,21 @@
         "跨境电商",
         "POD"
       ]
+    },
+    {
+      "slug": "ai-in-pod-pattern-designing-for-temu-semi-managed-sellers",
+      "title": "AI在设计POD图案中的应用：为Temu半托管卖家带来灵感与效率",
+      "description": "探索如何在POD图案设计中利用AI技术提升创意和效率，帮助Temu半托管卖家轻松应对设计挑战，并提高产品吸引力。",
+      "category": "AI工具",
+      "date": "2026-07-31",
+      "keywords": [
+        "AI设计",
+        "POD图案",
+        "创意",
+        "Temu半托管",
+        "跨境电商"
+      ]
     }
   ],
-  "count": 92
+  "count": 93
 }
