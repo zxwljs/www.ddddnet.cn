@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-07-31T11:20:07.712Z",
+  "updatedAt": "2026-07-31T13:30:50.136Z",
   "urlCount": 7,
   "urls": [
     "https://www.ddddnet.cn/blog/",
     "https://www.ddddnet.cn/sitemap.xml",
-    "https://www.ddddnet.cn/blog/posts/pod-suite-image-common-filling-patterns-and-application-scenarios.html",
     "https://www.ddddnet.cn/blog/posts/pod-pattern-design-inspiration-source.html",
     "https://www.ddddnet.cn/blog/posts/cross-border-data-analysis.html",
     "https://www.ddddnet.cn/blog/posts/temu-semi-managed-onboarding-process.html",
-    "https://www.ddddnet.cn/blog/posts/temu-semi-managed-vs-full-managed-mode-difference-and-selection.html"
+    "https://www.ddddnet.cn/blog/posts/temu-semi-managed-vs-full-managed-mode-difference-and-selection.html",
+    "https://www.ddddnet.cn/blog/posts/ai-in-cross-border-e-commerce.html"
   ],
   "results": {
     "indexnow": {
@@ -24,9 +24,8 @@
     },
     "baidu": {
       "success": false,
-      "skipped": true,
-      "reason": "24h 降频跳过",
-      "lastPushedAt": "2026-07-30T12:23:13.397Z"
+      "error": 400,
+      "message": "over quota"
     }
   }
 }
