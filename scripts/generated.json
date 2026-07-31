@@ -88,7 +88,8 @@
     "跨境电商数据分析方法与指标",
     "Temu半托管入驻条件与流程",
     "Temu半托管和全托管的区别与选择",
-    "AI技术如何改变跨境电商"
+    "AI技术如何改变跨境电商",
+    "AI套图工具如何提升设计效率"
   ],
   "titles": [],
   "posts": [
@@ -1393,7 +1394,21 @@
         "数据分析",
         "客户服务"
       ]
+    },
+    {
+      "slug": "ai-suite-image-tools-temu-semi-trusted-cross-border-sellers",
+      "title": "AI套图工具如何提升Temu半托管卖家的设计效率",
+      "description": "探索如何利用AI套图工具提高Temu平台上的设计效率和销量，减少重复劳动，让跨境卖家更轻松地应对海量商品图片需求。",
+      "category": "AI工具",
+      "date": "2026-07-31",
+      "keywords": [
+        "AI套图",
+        "设计效率",
+        "AI工具",
+        "Temu",
+        "跨境电商"
+      ]
     }
   ],
-  "count": 89
+  "count": 90
 }
