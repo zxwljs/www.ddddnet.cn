@@ -1560,7 +1560,21 @@
         "白底图制作工具",
         "叮当跨境ERP"
       ]
+    },
+    {
+      "slug": "mainstream-ai-model-comparison-and-selection",
+      "title": "主流AI大模型对比与选择",
+      "description": "作为Temu半托管的跨境卖家，你是否正在寻找合适的AI大模型来提升效率和降低成本？本文将深入探讨主流AI大模型的对比与选择，并结合实际操作案例和叮当跨境ERP的实际应用，为你提供实用的建议。",
+      "category": "AI工具",
+      "date": "2026-08-01",
+      "keywords": [
+        "AI大模型",
+        "模型对比",
+        "大模型选择",
+        "Temu",
+        "叮当跨境ERP"
+      ]
     }
   ],
-  "count": 100
+  "count": 101
 }
