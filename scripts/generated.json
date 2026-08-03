@@ -2059,7 +2059,21 @@
         "销售转化率",
         "实操案例"
       ]
+    },
+    {
+      "slug": "pod-suite-image-patterns-and-application-scenarios",
+      "title": "POD套图常见的填充模式与应用场景",
+      "description": "本文将深入探讨POD套图中的各种填充模式和实际应用场景，为Temu半托管的跨境卖家提供实用的操作建议和案例分析。同时，我们将介绍叮当跨境ERP这一强大的工具，帮助您更高效地管理POD套图制作过程。",
+      "category": "POD套图",
+      "date": "2026-08-03",
+      "keywords": [
+        "POD套图",
+        "填充模式",
+        "裁切适应",
+        "Temu半托管",
+        "叮当跨境ERP"
+      ]
     }
   ],
-  "count": 134
+  "count": 135
 }
