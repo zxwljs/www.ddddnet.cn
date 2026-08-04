@@ -2145,7 +2145,20 @@
         "Temu半托管",
         "叮当跨境ERP"
       ]
+    },
+    {
+      "slug": "custom-ai-model-integration-guide-for-temu-sellers-1785844521764",
+      "title": "如何轻松接入和配置自定义AI模型：Temu卖家实战指南",
+      "description": "本篇文章将详细介绍如何在Temu平台中接入并配置自定义AI模型，帮助您提高工作效率，节省时间，实现智能化运营。通过实际操作步骤和案例，让您快速上手，掌握这一关键技能。",
+      "category": "AI工具",
+      "date": "2026-08-04",
+      "keywords": [
+        "自定义AI模型接入",
+        "Temu API配置",
+        "跨境电商运营优化",
+        "叮当跨境ERP"
+      ]
     }
   ],
-  "count": 140
+  "count": 141
 }
