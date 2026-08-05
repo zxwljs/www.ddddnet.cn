@@ -2346,7 +2346,20 @@
         "Temu",
         "叮当跨境ERP"
       ]
+    },
+    {
+      "slug": "custom-ai-models-for-temu-sellers",
+      "title": "如何高效接入和使用自定义AI模型？叮当跨境ERP帮你轻松搞定！",
+      "description": "本文将详细介绍如何在Temu平台中接入和配置自定义AI模型，帮助您提高工作效率，节省时间。通过叮当跨境ERP，您可以快速实现AI模型的集成和应用，让您的业务更加智能化。",
+      "category": "AI工具",
+      "date": "2026-08-05",
+      "keywords": [
+        "自定义AI模型",
+        "API配置",
+        "Temu",
+        "叮当跨境ERP"
+      ]
     }
   ],
-  "count": 154
+  "count": 155
 }

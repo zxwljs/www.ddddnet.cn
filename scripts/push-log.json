@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-08-05T17:19:27.850Z",
+  "updatedAt": "2026-08-05T19:13:38.662Z",
   "urlCount": 7,
   "urls": [
     "https://www.ddddnet.cn/blog/",
     "https://www.ddddnet.cn/sitemap.xml",
-    "https://www.ddddnet.cn/blog/posts/batch-image-resize-tools-methods-1785915134603.html",
     "https://www.ddddnet.cn/blog/posts/cross-border-product-selection-methods-and-tools.html",
     "https://www.ddddnet.cn/blog/posts/temu-new-product-flow-rate.html",
     "https://www.ddddnet.cn/blog/posts/build-cross-border-seller-tools-chain-on-temu.html",
-    "https://www.ddddnet.cn/blog/posts/cross-border-ecommerce-automation-tools-trends-1785950365824.html"
+    "https://www.ddddnet.cn/blog/posts/cross-border-ecommerce-automation-tools-trends-1785950365824.html",
+    "https://www.ddddnet.cn/blog/posts/custom-ai-models-for-temu-sellers.html"
   ],
   "results": {
     "indexnow": {
@@ -24,8 +24,9 @@
     },
     "baidu": {
       "success": false,
-      "error": 400,
-      "message": "over quota"
+      "skipped": true,
+      "reason": "24h 降频跳过",
+      "lastPushedAt": "2026-08-05T17:19:27.850Z"
     }
   }
 }
