@@ -2359,7 +2359,22 @@
         "Temu",
         "叮当跨境ERP"
       ]
+    },
+    {
+      "slug": "glm-model-cross-border-trade-practical-application",
+      "title": "GLM大模型在跨境电商中的实际应用：提升效率和降低成本",
+      "description": "本文将探讨GLM大模型如何助力跨境电商卖家提高工作效率、优化运营流程以及降低成本。通过实际操作和案例分析，揭示GLM大模型在跨境电商领域的广泛应用及其带来的显著效果。",
+      "category": "AI工具",
+      "date": "2026-08-05",
+      "keywords": [
+        "GLM模型",
+        "跨境电商",
+        "AI应用",
+        "Temu",
+        "半托管卖家",
+        "叮当跨境ERP"
+      ]
     }
   ],
-  "count": 155
+  "count": 156
 }
