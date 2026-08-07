@@ -2572,7 +2572,19 @@
         "实操步骤",
         "真实案例"
       ]
+    },
+    {
+      "slug": "temu-semi-trusted-upper-commodity-complete-process-tutorial",
+      "title": "Temu半托管上品完整流程教程",
+      "description": "本篇文章将详细介绍Temu平台上的半托管模式操作流程，包括如何创建店铺、上架商品、优化listing以及管理订单等，帮助新手卖家快速上手Temu平台并实现盈利。",
+      "category": "Temu运营",
+      "date": "2026-08-07",
+      "keywords": [
+        "Temu半托管",
+        "上品教程",
+        "Temu运营"
+      ]
     }
   ],
-  "count": 169
+  "count": 170
 }
