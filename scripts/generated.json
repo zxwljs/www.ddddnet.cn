@@ -2525,7 +2525,23 @@
         "Temu新手指南",
         "Temu平台新手必读"
       ]
+    },
+    {
+      "slug": "temu-half-fulfilled-full-fulfilled-mode-depth-comparison",
+      "title": "Temu 半托管与全托管的深度对比：哪种模式更适合你？",
+      "description": "在这篇文章中，我们将深入探讨 Temu 的半托管和全托管模式的区别，包括成本、运营灵活性、物流管理等方面，并提供具体的实操案例和解决方案。同时，我们还会介绍如何使用叮当跨境ERP等工具来优化你的跨境业务。",
+      "category": "跨境干货",
+      "date": "2026-08-07",
+      "keywords": [
+        "半托管",
+        "全托管",
+        "模式对比",
+        "Temu",
+        "叮当跨境ERP",
+        "跨境电商",
+        "物流管理"
+      ]
     }
   ],
-  "count": 166
+  "count": 167
 }
