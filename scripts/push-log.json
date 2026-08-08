@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-08-08T12:25:28.139Z",
+  "updatedAt": "2026-08-08T13:38:10.344Z",
   "urlCount": 7,
   "urls": [
     "https://www.ddddnet.cn/blog/",
     "https://www.ddddnet.cn/sitemap.xml",
-    "https://www.ddddnet.cn/blog/posts/temu-infringement-penalty-rule-exploration.html",
     "https://www.ddddnet.cn/blog/posts/temu-half-warehousing-logistics-shipping-tips.html",
     "https://www.ddddnet.cn/blog/posts/batch-image-suite-tool-comparison-selection-temu-semi-trusted-seller-practical-guide.html",
     "https://www.ddddnet.cn/blog/posts/temu-semi-trusted-seller-zip-packaging-methods.html",
-    "https://www.ddddnet.cn/blog/posts/english-slug-1786191917524.html"
+    "https://www.ddddnet.cn/blog/posts/english-slug-1786191917524.html",
+    "https://www.ddddnet.cn/blog/posts/temu-pod-automation-guide.html"
   ],
   "results": {
     "indexnow": {
@@ -19,7 +19,8 @@
     },
     "bing": {
       "success": false,
-      "error": "fetch failed"
+      "status": 404,
+      "error": ""
     },
     "baidu": {
       "success": false,

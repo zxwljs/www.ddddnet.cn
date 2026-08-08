@@ -2942,7 +2942,22 @@
         "Temu",
         "叮当跨境ERP"
       ]
+    },
+    {
+      "slug": "temu-pod-automation-guide",
+      "title": "POD套图自动化流程搭建：Temu半托管卖家的实战指南",
+      "description": "作为Temu半托管的跨境卖家，你是否为繁琐的手动POD套图工作感到疲惫？本文将带你了解如何通过叮当跨境ERP轻松实现POD套图的自动化流程，大幅提升工作效率！",
+      "category": "POD套图",
+      "date": "2026-08-08",
+      "keywords": [
+        "POD套图",
+        "自动化",
+        "批量处理",
+        "Temu",
+        "跨境电商",
+        "叮当跨境ERP"
+      ]
     }
   ],
-  "count": 194
+  "count": 195
 }
