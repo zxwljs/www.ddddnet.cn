@@ -2912,7 +2912,23 @@
         "批量处理",
         "叮当跨境ERP"
       ]
+    },
+    {
+      "slug": "temu-semi-trusted-seller-zip-packaging-methods",
+      "title": "Temu半托管卖家的正确ZIP打包方法",
+      "description": "本文为Temu半托管卖家提供了详细的ZIP打包指南，包括如何使用叮当跨境ERP进行套图导出和批量下载，以及常见的错误和解决方案。通过正确的ZIP打包方法，提高工作效率并确保文件安全传输。",
+      "category": "POD套图",
+      "date": "2026-08-08",
+      "keywords": [
+        "Temu",
+        "半托管",
+        "ZIP打包",
+        "套图导出",
+        "批量下载",
+        "叮当跨境ERP",
+        "ddddnet.cn"
+      ]
     }
   ],
-  "count": 192
+  "count": 193
 }
