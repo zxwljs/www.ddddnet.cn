@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-08-08T23:18:09.436Z",
+  "updatedAt": "2026-08-09T00:53:35.969Z",
   "urlCount": 7,
   "urls": [
     "https://www.ddddnet.cn/blog/",
     "https://www.ddddnet.cn/sitemap.xml",
-    "https://www.ddddnet.cn/blog/posts/temu-activity-registration-promotion-preparation-guide.html",
     "https://www.ddddnet.cn/blog/posts/temu-cross-border-selling-template-reuse-and-variation-generation-techniques.html",
     "https://www.ddddnet.cn/blog/posts/temu-half-fullemployment-difference-and-selection.html",
     "https://www.ddddnet.cn/blog/posts/temu-semi-managed-seller-how-to-improve-listing-efficiency.html",
-    "https://www.ddddnet.cn/blog/posts/pod-pattern-design-inspiration-and-resource-source.html"
+    "https://www.ddddnet.cn/blog/posts/pod-pattern-design-inspiration-and-resource-source.html",
+    "https://www.ddddnet.cn/blog/posts/temu-half-seller-how-to-build-efficient-pod-batch-process.html"
   ],
   "results": {
     "indexnow": {
@@ -24,9 +24,8 @@
     },
     "baidu": {
       "success": false,
-      "skipped": true,
-      "reason": "24h 降频跳过",
-      "lastPushedAt": "2026-08-08T00:50:57.093Z"
+      "error": 400,
+      "message": "over quota"
     }
   }
 }
