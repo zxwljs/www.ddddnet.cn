@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-08-09T23:20:42.682Z",
+  "updatedAt": "2026-08-10T00:55:58.119Z",
   "urlCount": 7,
   "urls": [
     "https://www.ddddnet.cn/blog/",
     "https://www.ddddnet.cn/sitemap.xml",
-    "https://www.ddddnet.cn/blog/posts/temu-cross-border-main-image-a-b-testing-methods.html",
     "https://www.ddddnet.cn/blog/posts/semi-managed-model-will-become-mainstream.html",
     "https://www.ddddnet.cn/blog/posts/temu-a-b-testing-product-images.html",
     "https://www.ddddnet.cn/blog/posts/choose-crospbore-erp-tool-dingdang-vs-miaoshou-vs-dianxiaomei.html",
-    "https://www.ddddnet.cn/blog/posts/chinese-sellers-sea-new-opportunities-challenges.html"
+    "https://www.ddddnet.cn/blog/posts/chinese-sellers-sea-new-opportunities-challenges.html",
+    "https://www.ddddnet.cn/blog/posts/temu-detail-page-optimization.html"
   ],
   "results": {
     "indexnow": {
@@ -24,9 +24,8 @@
     },
     "baidu": {
       "success": false,
-      "skipped": true,
-      "reason": "24h 降频跳过",
-      "lastPushedAt": "2026-08-09T00:53:35.969Z"
+      "error": 400,
+      "message": "over quota"
     }
   }
 }
