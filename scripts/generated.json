@@ -3467,7 +3467,21 @@
         "跨境电商",
         "机遇挑战"
       ]
+    },
+    {
+      "slug": "glm-model-cross-border-trade-application",
+      "title": "GLM大模型在跨境电商中的应用",
+      "description": "探索GLM大模型如何助力Temu半托管卖家提升效率，降低成本，实现精准营销和自动化管理。通过实际操作和案例分析，揭示GLM大模型在跨境电商领域的强大功能和应用价值。",
+      "category": "AI工具",
+      "date": "2026-08-10",
+      "keywords": [
+        "GLM模型",
+        "跨境电商",
+        "AI应用",
+        "Temu",
+        "半托管卖家"
+      ]
     }
   ],
-  "count": 231
+  "count": 232
 }
