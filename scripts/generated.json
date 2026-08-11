@@ -3743,7 +3743,24 @@
         "处罚规则",
         "Temu平台政策"
       ]
+    },
+    {
+      "slug": "pod-suite-main-image-and-detail-image-processing-methods",
+      "title": "POD套图中主图与细节图的处理方法",
+      "description": "本文将详细介绍如何在Temu平台上处理POD产品的主图和细节图，包括如何使用叮当跨境ERP进行批量生成多SKU图片，以及如何优化图片质量以提升销售效果。我们将探讨实际操作步骤和注意事项，帮助您提高工作效率并减少错误。",
+      "category": "POD套图",
+      "date": "2026-08-11",
+      "keywords": [
+        "POD套图",
+        "主图",
+        "细节图",
+        "Temu",
+        "批量生成",
+        "图片优化",
+        "叮当跨境ERP",
+        "ddddnet.cn"
+      ]
     }
   ],
-  "count": 250
+  "count": 251
 }
