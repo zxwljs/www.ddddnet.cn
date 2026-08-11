@@ -3926,7 +3926,23 @@
         "叮当跨境ERP",
         "ddddnet.cn"
       ]
+    },
+    {
+      "slug": "cross-border-payment-receipt-plan-temu-semi-trusted-vendor-guide",
+      "title": "跨境电商支付与收款方案：Temu半托管卖家的实战指南",
+      "description": "本文为Temu半托管卖家量身定制，深入探讨跨境电商支付与收款方案，包括实操步骤、真实案例和常见问题的应对策略，帮助您轻松管理跨境交易中的资金流转。",
+      "category": "跨境干货",
+      "date": "2026-08-11",
+      "keywords": [
+        "跨境支付",
+        "收款",
+        "资金流转",
+        "Temu半托管",
+        "实操步骤",
+        "真实案例",
+        "常见问题"
+      ]
     }
   ],
-  "count": 262
+  "count": 263
 }
