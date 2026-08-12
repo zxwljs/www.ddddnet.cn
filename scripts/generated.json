@@ -4199,7 +4199,20 @@
         "实用工具",
         "自定义AI模型接入"
       ]
+    },
+    {
+      "slug": "ai-assisted-product-selection-for-cross-border-sellers",
+      "title": "如何使用AI工具提升跨境卖家的选品效率",
+      "description": "本文将详细介绍如何在跨境电商中利用AI工具进行数据分析和选品，帮助卖家提高效率和准确性。",
+      "category": "AI工具",
+      "date": "2026-08-12",
+      "keywords": [
+        "AI选品",
+        "数据分析",
+        "选品工具",
+        "Temu半托管"
+      ]
     }
   ],
-  "count": 280
+  "count": 281
 }
