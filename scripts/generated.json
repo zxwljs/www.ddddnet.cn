@@ -3989,7 +3989,23 @@
         "图片编辑",
         "实操"
       ]
+    },
+    {
+      "slug": "zhipu-ai-in-temu-semi-managed-cross-border-business-practical-applications",
+      "title": "智谱AI模型在Temu半托管跨境业务中的实战应用",
+      "description": "作为Temu平台上的半托管卖家，您是否经常面临商品描述撰写繁琐、图片处理耗时以及侵权风险高等问题？本文将详细介绍如何利用智谱AI模型有效提升跨境业务的效率和准确性，并结合实际操作步骤和案例分析，帮助您轻松应对这些挑战。",
+      "category": "AI工具",
+      "date": "2026-08-12",
+      "keywords": [
+        "智谱AI",
+        "Temu",
+        "跨境业务",
+        "GLM",
+        "实操",
+        "图片处理",
+        "商品描述"
+      ]
     }
   ],
-  "count": 266
+  "count": 267
 }
