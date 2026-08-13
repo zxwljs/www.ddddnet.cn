@@ -4429,7 +4429,22 @@
         "跨境电商",
         "选品工具"
       ]
+    },
+    {
+      "slug": "temu-ai-content-platform-review",
+      "title": "如何在Temu平台上使用AI生成内容并顺利通过审核？",
+      "description": "本文将详细介绍如何利用AI生成的内容在Temu平台上进行合规操作，并通过实际案例和详细步骤展示如何规避常见的审核风险。",
+      "category": "AI工具",
+      "date": "2026-08-13",
+      "keywords": [
+        "AI生成内容",
+        "Temu平台",
+        "合规性",
+        "平台审核",
+        "实操案例",
+        "叮当跨境ERP"
+      ]
     }
   ],
-  "count": 296
+  "count": 297
 }
