@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-08-14T05:24:38.626Z",
+  "updatedAt": "2026-08-14T07:07:54.864Z",
   "urlCount": 7,
   "urls": [
     "https://www.ddddnet.cn/blog/",
     "https://www.ddddnet.cn/sitemap.xml",
-    "https://www.ddddnet.cn/blog/posts/common-infringement-types-and-cases-in-cross-border-e-commerce.html",
     "https://www.ddddnet.cn/blog/posts/semi-fullemployment-mode-depth-comparison.html",
     "https://www.ddddnet.cn/blog/posts/batch-image-tool-comparison-selection.html",
     "https://www.ddddnet.cn/blog/posts/english-slug-1786679729402.html",
-    "https://www.ddddnet.cn/blog/posts/ecommerce-image-seo-optimization-tips-1786685075958.html"
+    "https://www.ddddnet.cn/blog/posts/ecommerce-image-seo-optimization-tips-1786685075958.html",
+    "https://www.ddddnet.cn/blog/posts/temu-cross-border-product-page-image-layout-design-guidelines.html"
   ],
   "results": {
     "indexnow": {
@@ -24,8 +24,9 @@
     },
     "baidu": {
       "success": false,
-      "error": 400,
-      "message": "over quota"
+      "skipped": true,
+      "reason": "24h 降频跳过",
+      "lastPushedAt": "2026-08-14T05:24:38.626Z"
     }
   }
 }
