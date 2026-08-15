@@ -5091,7 +5091,21 @@
         "POD图案",
         "版权风险"
       ]
+    },
+    {
+      "slug": "glm-models-cross-border-ecommerce-application",
+      "title": "GLM大模型在跨境电商中的应用：提升运营效率与精准营销",
+      "description": "本文将探讨GLM大模型如何助力Temu半托管卖家提升运营效率和实现精准营销，并结合叮当跨境ERP的实际应用案例，为卖家提供实用的操作指南。",
+      "category": "AI工具",
+      "date": "2026-08-15",
+      "keywords": [
+        "GLM模型",
+        "跨境电商",
+        "AI应用",
+        "Temu",
+        "叮当跨境ERP"
+      ]
     }
   ],
-  "count": 341
+  "count": 342
 }
