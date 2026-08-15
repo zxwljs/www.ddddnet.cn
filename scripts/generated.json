@@ -4808,7 +4808,22 @@
         "批量处理",
         "图像编辑"
       ]
+    },
+    {
+      "slug": "custom-ai-model-integration-guide-for-temu-semi-managed-sellers",
+      "title": "如何轻松接入和配置自定义AI模型：Temu半托管卖家的实战指南",
+      "description": "作为Temu半托管的跨境卖家，你是否曾梦想过利用先进的AI技术来提升运营效率？本文将带你深入了解如何接入并配置自定义AI模型，让你的业务更上一层楼！",
+      "category": "AI工具",
+      "date": "2026-08-15",
+      "keywords": [
+        "AI模型接入",
+        "自定义模型",
+        "API配置",
+        "Temu",
+        "跨境电商",
+        "叮当跨境ERP"
+      ]
     }
   ],
-  "count": 322
+  "count": 323
 }
