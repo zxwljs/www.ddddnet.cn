@@ -5352,7 +5352,20 @@
         "ERP系统",
         "叮当ERP"
       ]
+    },
+    {
+      "slug": "batch-image-size-changer-tools-methods",
+      "title": "批量修改图片尺寸的工具与方法",
+      "description": "对于Temu半托管的跨境卖家来说，批量修改图片尺寸是一项重要的日常工作。本文将详细介绍如何使用叮当跨境ERP中的实用工具来轻松实现批量改图，提高工作效率。",
+      "category": "实用技巧",
+      "date": "2026-08-16",
+      "keywords": [
+        "批量改图",
+        "图片尺寸",
+        "工具",
+        "叮当跨境ERP"
+      ]
     }
   ],
-  "count": 358
+  "count": 359
 }
