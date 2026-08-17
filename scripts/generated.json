@@ -5679,7 +5679,22 @@
         "叮当跨境ERP",
         "跨境电商"
       ]
+    },
+    {
+      "slug": "how-to-quickly-create-multiple-skus-product-images",
+      "title": "如何快速制作多SKU商品图",
+      "description": "对于Temu半托管卖家来说，制作多SKU商品图是一项繁琐的任务。本文将详细介绍如何使用叮当跨境ERP中的POD智能套图功能，轻松实现多SKU商品图的批量制作，节省时间和成本。",
+      "category": "实用技巧",
+      "date": "2026-08-17",
+      "keywords": [
+        "多SKU",
+        "商品图",
+        "批量制作",
+        "Temu",
+        "叮当跨境ERP",
+        "POD智能套图"
+      ]
     }
   ],
-  "count": 380
+  "count": 381
 }
