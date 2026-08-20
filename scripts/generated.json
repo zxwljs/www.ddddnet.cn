@@ -6549,7 +6549,23 @@
         "叮当跨境ERP",
         "跨境电商"
       ]
+    },
+    {
+      "slug": "temu-half-trusted-replenishment-and-inventory-management-tactics",
+      "title": "Temu半托管备货与库存管理的实战技巧",
+      "description": "本文将详细介绍Temu平台半托管模式下如何高效进行备货和库存管理，通过实际操作步骤和案例分享，帮助卖家优化供应链管理，降低成本，提高效率。",
+      "category": "Temu运营",
+      "date": "2026-08-20",
+      "keywords": [
+        "Temu备货",
+        "库存管理",
+        "半托管",
+        "供应链管理",
+        "ERP系统",
+        "跨境电商",
+        "实操技巧"
+      ]
     }
   ],
-  "count": 439
+  "count": 440
 }
