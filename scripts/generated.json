@@ -6681,7 +6681,20 @@
         "Temu市场分析",
         "Temu数据分析"
       ]
+    },
+    {
+      "slug": "kimi-dai-mo-xing-shi-yong-ti-yan-yu-dian-shang-chang-jing",
+      "title": "Kimi大模型使用体验与电商场景",
+      "description": "本文将分享Kimi大模型在跨境电商中的应用体验，通过实际操作和案例分析，帮助Temu半托管的卖家更好地利用这一强大工具提升效率和竞争力。",
+      "category": "AI工具",
+      "date": "2026-08-20",
+      "keywords": [
+        "Kimi",
+        "大模型",
+        "电商",
+        "Temu半托管"
+      ]
     }
   ],
-  "count": 448
+  "count": 449
 }
