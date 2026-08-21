@@ -7006,7 +7006,24 @@
         "压缩/改尺寸/白底图",
         "自定义AI模型接入"
       ]
+    },
+    {
+      "slug": "temu-semi-trusted-cross-border-seller-correct-way-to-export-and-zip-packaging-suite-diagram",
+      "title": "Temu 半托管卖家如何正确导出和ZIP打包套图？",
+      "description": "本文将详细介绍 Temu 半托管平台卖家如何高效导出和 ZIP 打包商品图片套图。通过叮当跨境ERP提供的POD智能套图功能，您可以轻松实现批量处理，提高工作效率。掌握这些技巧，让您的跨境业务更上一层楼！",
+      "category": "POD套图",
+      "date": "2026-08-21",
+      "keywords": [
+        "Temu",
+        "半托管",
+        "跨境电商",
+        "套图导出",
+        "ZIP打包",
+        "批量下载",
+        "叮当跨境ERP",
+        "POD智能套图"
+      ]
     }
   ],
-  "count": 469
+  "count": 470
 }
