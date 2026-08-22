@@ -7286,7 +7286,20 @@
         "实操",
         "案例分析"
       ]
+    },
+    {
+      "slug": "pod-copyright-risk-avoidance-guide",
+      "title": "POD版权风险规避完全指南",
+      "description": "作为Temu半托管卖家，如何在保证利润的同时有效规避POD版权风险？本文为你提供详细操作步骤和实际案例，帮你掌握规避技巧！",
+      "category": "侵权规避",
+      "date": "2026-08-22",
+      "keywords": [
+        "POD版权",
+        "侵权规避",
+        "版权风险",
+        "Temu半托管"
+      ]
     }
   ],
-  "count": 488
+  "count": 489
 }
