@@ -7857,7 +7857,22 @@
         "ERP",
         "叮当跨境ERP"
       ]
+    },
+    {
+      "slug": "temu-cross-border-semi-managed-ai-product-description-generation",
+      "title": "用AI批量生成商品描述，让Temu半托管卖家的运营更高效",
+      "description": "对于Temu半托管的跨境卖家来说，商品描述的撰写是一项耗时且繁琐的任务。本文将详细介绍如何利用AI工具批量生成高效的商品描述，提高工作效率，节省时间成本。",
+      "category": "AI工具",
+      "date": "2026-08-23",
+      "keywords": [
+        "AI批量生成",
+        "商品描述",
+        "Temu半托管",
+        "跨境电商",
+        "效率工具",
+        "批量处理"
+      ]
     }
   ],
-  "count": 526
+  "count": 527
 }
