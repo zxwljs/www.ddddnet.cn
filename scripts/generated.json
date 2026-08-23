@@ -7829,7 +7829,19 @@
         "跨境电商",
         "Temu半托管"
       ]
+    },
+    {
+      "slug": "temu-semi-trusted-logistics-shipping-tips",
+      "title": "Temu半托管物流发货注意事项",
+      "description": "本文为Temu平台上的半托管卖家提供了详细的物流发货指南，包括操作步骤、常见问题和最佳实践，帮助您高效管理订单和提升客户满意度。",
+      "category": "Temu运营",
+      "date": "2026-08-23",
+      "keywords": [
+        "Temu半托管",
+        "物流发货",
+        "发货流程"
+      ]
     }
   ],
-  "count": 524
+  "count": 525
 }
