@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-08-24T07:50:18.884Z",
+  "updatedAt": "2026-08-24T08:36:32.852Z",
   "urlCount": 7,
   "urls": [
     "https://www.ddddnet.cn/blog/",
     "https://www.ddddnet.cn/sitemap.xml",
-    "https://www.ddddnet.cn/blog/posts/cross-border-independence-platform-comparison.html",
     "https://www.ddddnet.cn/blog/posts/temu-semi-trusted-entry-condition-and-process-analysis.html",
     "https://www.ddddnet.cn/blog/posts/ai-batch-generate-product-descriptions-temu-semi-trusted-sellers.html",
     "https://www.ddddnet.cn/blog/posts/temu-semi-trusted-seller-secret-weapon-how-to-use-dingdang-cross-border-erp-to-precisely-position-the-print-region-in-set-image-template.html",
-    "https://www.ddddnet.cn/blog/posts/cross-border-supply-chain-digital-upgrade-1787557817994.html"
+    "https://www.ddddnet.cn/blog/posts/cross-border-supply-chain-digital-upgrade-1787557817994.html",
+    "https://www.ddddnet.cn/blog/posts/temu-half-remote-cross-border-seller-trademark-infringement-and-patent-infringement-difference.html"
   ],
   "results": {
     "indexnow": {
@@ -24,9 +24,8 @@
     },
     "baidu": {
       "success": false,
-      "skipped": true,
-      "reason": "24h 降频跳过",
-      "lastPushedAt": "2026-08-23T08:18:14.179Z"
+      "error": 400,
+      "message": "over quota"
     }
   }
 }
