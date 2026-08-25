@@ -8376,7 +8376,21 @@
         "商品详情页",
         "文案优化"
       ]
+    },
+    {
+      "slug": "temu-main-image-a-b-testing-conversion-optimization",
+      "title": "如何通过A/B测试提升Temu商品主图的转化率",
+      "description": "本文将详细探讨如何在Temu平台上进行商品主图A/B测试，以提升销售转化率。通过实际操作和案例分析，揭示主图设计的奥秘，并介绍叮当跨境ERP这一高效辅助工具。",
+      "category": "实用技巧",
+      "date": "2026-08-25",
+      "keywords": [
+        "主图测试",
+        "A/B测试",
+        "转化优化",
+        "Temu",
+        "叮当跨境ERP"
+      ]
     }
   ],
-  "count": 560
+  "count": 561
 }
