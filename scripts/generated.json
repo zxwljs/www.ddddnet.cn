@@ -8693,7 +8693,20 @@
         "库存优化",
         "Temu半托管平台"
       ]
+    },
+    {
+      "slug": "temu-semi-managed-batch-export-zip-compression",
+      "title": "Temu半托管的正确套图导出和ZIP打包方式",
+      "description": "本文将详细介绍如何在Temu半托管平台上进行套图导出并使用ZIP打包，以提升跨境卖家的工作效率。通过详细的实操步骤，帮助您轻松管理商品图片，提高店铺运营效率。",
+      "category": "POD套图",
+      "date": "2026-08-26",
+      "keywords": [
+        "套图导出",
+        "ZIP打包",
+        "批量下载",
+        "Temu半托管"
+      ]
     }
   ],
-  "count": 581
+  "count": 582
 }
