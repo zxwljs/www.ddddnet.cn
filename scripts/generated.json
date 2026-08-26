@@ -8706,7 +8706,22 @@
         "批量下载",
         "Temu半托管"
       ]
+    },
+    {
+      "slug": "temu-batch-product-image-generation",
+      "title": "如何用模板批量生成商品图：提高Temu半托管卖家的效率",
+      "description": "你是否还在手动一张张制作商品图？这篇文章将教你如何利用叮当跨境ERP轻松实现批量生成商品图，大幅提升Temu半托管卖家的运营效率。",
+      "category": "实用技巧",
+      "date": "2026-08-26",
+      "keywords": [
+        "模板生成",
+        "批量商品图",
+        "套图",
+        "Temu",
+        "叮当跨境ERP",
+        "跨境电商"
+      ]
     }
   ],
-  "count": 582
+  "count": 583
 }
