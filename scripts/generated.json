@@ -8603,7 +8603,22 @@
         "Temu卖家",
         "叮当跨境ERP"
       ]
+    },
+    {
+      "slug": "custom-ai-model-integration-guide-for-temu-semi-managed-sellers-1787721843706",
+      "title": "自定义AI模型接入与配置指南：轻松提升Temu运营效率",
+      "description": "本指南详细介绍了如何通过叮当跨境ERP接入并配置自定义AI模型，帮助Temu半托管卖家提高工作效率，降低成本，实现智能化运营。",
+      "category": "AI工具",
+      "date": "2026-08-26",
+      "keywords": [
+        "AI模型接入",
+        "自定义模型",
+        "API配置",
+        "Temu",
+        "跨境电商",
+        "叮当跨境ERP"
+      ]
     }
   ],
-  "count": 575
+  "count": 576
 }
