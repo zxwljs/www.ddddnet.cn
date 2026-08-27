@@ -8797,7 +8797,21 @@
         "审核流程",
         "运营技巧"
       ]
+    },
+    {
+      "slug": "temu-semi-managed-sellers-saas-tools-guide",
+      "title": "Temu半托管卖家的SaaS工具选择指南",
+      "description": "对于正在使用Temu半托管的跨境电商卖家来说，如何高效管理订单和库存？本文将深入探讨跨境电商SaaS工具生态，并重点介绍叮当跨境ERP，帮助您轻松应对运营挑战！",
+      "category": "行业趋势",
+      "date": "2026-08-27",
+      "keywords": [
+        "SaaS工具",
+        "跨境电商",
+        "Temu半托管",
+        "ERP系统",
+        "订单管理系统"
+      ]
     }
   ],
-  "count": 588
+  "count": 589
 }
