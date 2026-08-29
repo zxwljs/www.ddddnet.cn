@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-08-29T20:36:34.001Z",
+  "updatedAt": "2026-08-29T22:55:24.997Z",
   "urlCount": 7,
   "urls": [
     "https://www.ddddnet.cn/blog/",
     "https://www.ddddnet.cn/sitemap.xml",
-    "https://www.ddddnet.cn/blog/posts/pod-template-design-guide-1787970938739.html",
     "https://www.ddddnet.cn/blog/posts/temu-selecting-tips-and-best-practice-methods-for-cross-border-sellers.html",
     "https://www.ddddnet.cn/blog/posts/miao-shou-erp-shang-jia-zuo-zhan-wan-qian-du-xue-jiao-cheng-temu-ban-tu-guan-mai-yao-de-bei-di-shen-qiao.html",
     "https://www.ddddnet.cn/blog/posts/temu-pod-design-reasonable-use-boundary.html",
-    "https://www.ddddnet.cn/blog/posts/temu-a-b-testing-product-main-image-optimization.html"
+    "https://www.ddddnet.cn/blog/posts/temu-a-b-testing-product-main-image-optimization.html",
+    "https://www.ddddnet.cn/blog/posts/temu-half-fulfillment-vs-full-fulfillment.html"
   ],
   "results": {
     "indexnow": {
@@ -24,8 +24,9 @@
     },
     "baidu": {
       "success": false,
-      "error": 400,
-      "message": "over quota"
+      "skipped": true,
+      "reason": "24h 降频跳过",
+      "lastPushedAt": "2026-08-29T20:36:34.001Z"
     }
   }
 }
