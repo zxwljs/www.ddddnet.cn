@@ -8918,7 +8918,21 @@
         "商品管理",
         "运营效率"
       ]
+    },
+    {
+      "slug": "temu-pod-design-reasonable-use-boundary",
+      "title": "Temu半托管卖家的 POD 设计：如何合理使用边界？",
+      "description": "本文为 Temu 半托管卖家提供了关于如何在 POD 设计中合理使用边界的详细指南。通过深入探讨版权问题以及叮当跨境ERP提供的解决方案，帮助卖家避免法律风险并提升业务效率。",
+      "category": "侵权规避",
+      "date": "2026-08-29",
+      "keywords": [
+        "POD设计",
+        "合理使用",
+        "版权",
+        "Temu半托管",
+        "叮当跨境ERP"
+      ]
     }
   ],
-  "count": 596
+  "count": 597
 }
