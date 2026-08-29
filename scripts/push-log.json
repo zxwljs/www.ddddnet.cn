@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-08-28T19:45:50.498Z",
+  "updatedAt": "2026-08-29T02:35:39.944Z",
   "urlCount": 7,
   "urls": [
     "https://www.ddddnet.cn/blog/",
     "https://www.ddddnet.cn/sitemap.xml",
-    "https://www.ddddnet.cn/blog/posts/temu-semi-managed-sellers-saas-tools-guide.html",
     "https://www.ddddnet.cn/blog/posts/ai-generated-content-platform-review-guidelines-temu-semi-managed-cross-border-sellers-practical-guide.html",
     "https://www.ddddnet.cn/blog/posts/using-tongyi-qianwen-model-to-improve-temu-semi-managed-ecommerce-operation-efficiency.html",
     "https://www.ddddnet.cn/blog/posts/temu-semi-managed-seller-zip-packaging-methods.html",
-    "https://www.ddddnet.cn/blog/posts/batch-image-resize-tools-methods-1787946347912.html"
+    "https://www.ddddnet.cn/blog/posts/batch-image-resize-tools-methods-1787946347912.html",
+    "https://www.ddddnet.cn/blog/posts/pod-template-design-guide-1787970938739.html"
   ],
   "results": {
     "indexnow": {
@@ -24,8 +24,9 @@
     },
     "baidu": {
       "success": false,
-      "error": 400,
-      "message": "over quota"
+      "skipped": true,
+      "reason": "24h 降频跳过",
+      "lastPushedAt": "2026-08-28T19:45:50.498Z"
     }
   }
 }
