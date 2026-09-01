@@ -9116,7 +9116,21 @@
         "跨境电商",
         "商品展示"
       ]
+    },
+    {
+      "slug": "batch-generate-product-images-with-templates",
+      "title": "如何用模板批量生成商品图",
+      "description": "你是否为手动制作大量商品图片而感到疲惫？本文将详细介绍如何使用叮当跨境ERP轻松实现批量商品图生成，节省时间和成本。",
+      "category": "实用技巧",
+      "date": "2026-09-01",
+      "keywords": [
+        "模板生成",
+        "批量商品图",
+        "套图",
+        "叮当跨境ERP",
+        "Temu半托管"
+      ]
     }
   ],
-  "count": 610
+  "count": 611
 }
