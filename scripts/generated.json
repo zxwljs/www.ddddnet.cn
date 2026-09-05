@@ -9531,7 +9531,19 @@
         "图片处理",
         "批量操作"
       ]
+    },
+    {
+      "slug": "temu-rule-guidance-and-trap-avoidance-guide",
+      "title": "Temu平台规则解读与避坑指南",
+      "description": "在这篇文章中，我们将深入探讨Temu平台的各项规则，并提供实用的避坑指南。作为Temu半托管的跨境卖家，了解这些规则和陷阱将有助于您在平台上顺利运营并规避潜在风险。",
+      "category": "Temu运营",
+      "date": "2026-09-05",
+      "keywords": [
+        "Temu规则",
+        "避坑",
+        "平台政策"
+      ]
     }
   ],
-  "count": 639
+  "count": 640
 }

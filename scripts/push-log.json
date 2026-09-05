@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-09-05T11:01:53.235Z",
+  "updatedAt": "2026-09-05T14:11:45.773Z",
   "urlCount": 7,
   "urls": [
     "https://www.ddddnet.cn/blog/",
     "https://www.ddddnet.cn/sitemap.xml",
-    "https://www.ddddnet.cn/blog/posts/ai-regulation-on-e-commerce.html",
     "https://www.ddddnet.cn/blog/posts/temu-pricing-strategies-profit-calculation.html",
     "https://www.ddddnet.cn/blog/posts/miao-shou-erp-shang-jia-cuo-zuo-wan-qian-tutorial.html",
     "https://www.ddddnet.cn/blog/posts/pod-on-demand-printing-market-outlook-and-opportunities.html",
-    "https://www.ddddnet.cn/blog/posts/batch-image-suite-tool-comparison-and-selection.html"
+    "https://www.ddddnet.cn/blog/posts/batch-image-suite-tool-comparison-and-selection.html",
+    "https://www.ddddnet.cn/blog/posts/temu-rule-guidance-and-trap-avoidance-guide.html"
   ],
   "results": {
     "indexnow": {
@@ -24,8 +24,9 @@
     },
     "baidu": {
       "success": false,
-      "error": 400,
-      "message": "over quota"
+      "skipped": true,
+      "reason": "24h 降频跳过",
+      "lastPushedAt": "2026-09-05T11:01:53.235Z"
     }
   }
 }
