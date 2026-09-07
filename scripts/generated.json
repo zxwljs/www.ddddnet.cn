@@ -9797,7 +9797,25 @@
         "实用工具",
         "自定义AI模型接入"
       ]
+    },
+    {
+      "slug": "kimi-large-model-usage-experience-and-ecommerce-scene-temu-semi-trusted-seller-guide",
+      "title": "Kimi大模型使用体验与电商场景：Temu半托管卖家的实战指南",
+      "description": "作为Temu半托管的跨境卖家，你是否曾为商品描述撰写感到困扰？本文将带你深入了解Kimi大模型的实际应用，并结合电商场景，为你提供实用的操作技巧和案例分析。通过这些内容，你不仅能提升商品描述质量，还能有效利用叮当跨境ERP等工具，优化运营效率。",
+      "category": "AI工具",
+      "date": "2026-09-07",
+      "keywords": [
+        "Kimi",
+        "大模型",
+        "电商",
+        "Temu",
+        "半托管",
+        "商品描述",
+        "实操",
+        "案例分析",
+        "叮当跨境ERP"
+      ]
     }
   ],
-  "count": 657
+  "count": 658
 }
