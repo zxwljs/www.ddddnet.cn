@@ -9960,7 +9960,21 @@
         "Temu跨境",
         "POD设计"
       ]
+    },
+    {
+      "slug": "custom-ai-model-integration-guide-for-temu-semi-managed-stores",
+      "title": "自定义AI模型接入与配置指南：为Temu半托管店铺量身打造",
+      "description": "你是否正在寻找一种高效的方法来提升Temu半托管店铺的运营效率？本文将详细介绍如何通过叮当跨境ERP轻松接入和配置自定义AI模型，助你在激烈的市场竞争中脱颖而出！",
+      "category": "AI工具",
+      "date": "2026-09-09",
+      "keywords": [
+        "AI模型接入",
+        "自定义模型",
+        "API配置",
+        "Temu半托管",
+        "叮当跨境ERP"
+      ]
     }
   ],
-  "count": 668
+  "count": 669
 }
