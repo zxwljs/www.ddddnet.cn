@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-09-13T07:11:41.789Z",
+  "updatedAt": "2026-09-13T12:55:52.667Z",
   "urlCount": 7,
   "urls": [
     "https://www.ddddnet.cn/blog/",
     "https://www.ddddnet.cn/sitemap.xml",
-    "https://www.ddddnet.cn/blog/posts/ai-assisted-product-selection-strategies-for-temu-semi-managed-sellers.html",
     "https://www.ddddnet.cn/blog/posts/temu-infringement-detection-methods-self-inspection-process.html",
     "https://www.ddddnet.cn/blog/posts/batch-processing-and-optimizing-product-images-secret-to-increasing-store-conversion-rates.html",
     "https://www.ddddnet.cn/blog/posts/temu-semi-managed-seller-how-to-increase-upload-efficiency.html",
-    "https://www.ddddnet.cn/blog/posts/design-high-conversion-product-set-template-1789283501256.html"
+    "https://www.ddddnet.cn/blog/posts/design-high-conversion-product-set-template-1789283501256.html",
+    "https://www.ddddnet.cn/blog/posts/utilizing-tongyi-qianwen-model-to-enhance-temu-store-operation-efficiency.html"
   ],
   "results": {
     "indexnow": {
@@ -19,8 +19,8 @@
     },
     "bing": {
       "success": false,
-      "status": 500,
-      "error": "<HTML><HEAD>\n<TITLE>Internal Server Error</TITLE>\n</HEAD><BODY>\n<H1>Internal Server Error - Read</H1>\nThe server encountered an internal error or misconfiguration and was unable to\ncomplete your reque"
+      "status": 404,
+      "error": ""
     },
     "baidu": {
       "success": false,
