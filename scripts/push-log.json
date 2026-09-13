@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-09-12T23:33:40.835Z",
+  "updatedAt": "2026-09-13T01:59:07.424Z",
   "urlCount": 7,
   "urls": [
     "https://www.ddddnet.cn/blog/",
     "https://www.ddddnet.cn/sitemap.xml",
-    "https://www.ddddnet.cn/blog/posts/building-efficient-cross-border-tools-chain-for-temu-semi-managed-sellers-1789218837056.html",
     "https://www.ddddnet.cn/blog/posts/temu-main-image-ab-testing-methods.html",
     "https://www.ddddnet.cn/blog/posts/ai-assisted-product-selection-strategies-for-temu-semi-managed-sellers.html",
     "https://www.ddddnet.cn/blog/posts/temu-infringement-detection-methods-self-inspection-process.html",
-    "https://www.ddddnet.cn/blog/posts/batch-processing-and-optimizing-product-images-secret-to-increasing-store-conversion-rates.html"
+    "https://www.ddddnet.cn/blog/posts/batch-processing-and-optimizing-product-images-secret-to-increasing-store-conversion-rates.html",
+    "https://www.ddddnet.cn/blog/posts/temu-semi-managed-seller-how-to-increase-upload-efficiency.html"
   ],
   "results": {
     "indexnow": {
@@ -24,8 +24,9 @@
     },
     "baidu": {
       "success": false,
-      "error": 400,
-      "message": "over quota"
+      "skipped": true,
+      "reason": "24h 降频跳过",
+      "lastPushedAt": "2026-09-12T23:33:40.835Z"
     }
   }
 }
