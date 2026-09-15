@@ -10523,7 +10523,21 @@
         "跨境电商",
         "实操指南"
       ]
+    },
+    {
+      "slug": "ai-batch-generate-product-descriptions-method",
+      "title": "用AI批量生成商品描述的方法",
+      "description": "作为Temu半托管的跨境卖家，你是否经常为商品描述写作感到头疼？本文将详细介绍如何使用AI批量生成商品描述，提高工作效率，并减少手动输入错误。同时，我们将探讨如何利用叮当跨境ERP中的AI功能，轻松实现这一目标。",
+      "category": "AI工具",
+      "date": "2026-09-15",
+      "keywords": [
+        "AI批量生成",
+        "商品描述",
+        "效率工具",
+        "Temu半托管",
+        "叮当跨境ERP"
+      ]
     }
   ],
-  "count": 706
+  "count": 707
 }
