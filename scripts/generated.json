@@ -10623,7 +10623,24 @@
         "Temu半托管卖家",
         "叮当跨境ERP"
       ]
+    },
+    {
+      "slug": "utilizing-tongyi-qianwen-model-to-optimize-temu-store-operation-ecommerce-scene-application-practice",
+      "title": "如何利用通义千问模型优化Temu店铺运营：电商场景应用实战",
+      "description": "本文将详细介绍如何使用通义千问模型来提升Temu店铺的运营效率，包括商品描述撰写、客户服务响应以及数据分析等电商场景中的实际应用。通过具体的操作步骤和案例分析，帮助卖家更好地掌握这一先进技术，提高销售转化率。",
+      "category": "AI工具",
+      "date": "2026-09-16",
+      "keywords": [
+        "通义千问",
+        "Temu",
+        "电商",
+        "AI应用",
+        "实战",
+        "商品描述",
+        "客户服务",
+        "数据分析"
+      ]
     }
   ],
-  "count": 713
+  "count": 714
 }
