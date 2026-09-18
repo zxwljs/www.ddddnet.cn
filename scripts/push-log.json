@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-09-18T07:43:28.928Z",
+  "updatedAt": "2026-09-18T12:28:24.257Z",
   "urlCount": 7,
   "urls": [
     "https://www.ddddnet.cn/blog/",
     "https://www.ddddnet.cn/sitemap.xml",
-    "https://www.ddddnet.cn/blog/posts/zhipu-ai-model-in-cross-border-business-value-1789667461061.html",
     "https://www.ddddnet.cn/blog/posts/cross-border-selection-methods-and-tools-1789677834185.html",
     "https://www.ddddnet.cn/blog/posts/temu-pricing-strategy-profit-calculation-1789686889830.html",
     "https://www.ddddnet.cn/blog/posts/cross-border-supply-chain-digital-upgrade-1789697163808.html",
-    "https://www.ddddnet.cn/blog/posts/batch-image-size-changer-tools-methods-1789717408021.html"
+    "https://www.ddddnet.cn/blog/posts/batch-image-size-changer-tools-methods-1789717408021.html",
+    "https://www.ddddnet.cn/blog/posts/custom-ai-model-integration-guide-1789734499095.html"
   ],
   "results": {
     "indexnow": {
@@ -24,9 +24,8 @@
     },
     "baidu": {
       "success": false,
-      "skipped": true,
-      "reason": "24h 降频跳过",
-      "lastPushedAt": "2026-09-17T08:08:36.561Z"
+      "error": 400,
+      "message": "over quota"
     }
   }
 }
