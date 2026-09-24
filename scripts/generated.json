@@ -11379,7 +11379,21 @@
         "Temu自查",
         "叮当跨境ERP"
       ]
+    },
+    {
+      "slug": "batch-product-image-generation-template",
+      "title": "如何用模板批量生成商品图",
+      "description": "本文将详细介绍如何利用叮当跨境ERP中的POD智能套图功能，快速高效地批量生成商品图片，节省时间和成本，提高工作效率。",
+      "category": "实用技巧",
+      "date": "2026-09-24",
+      "keywords": [
+        "模板生成",
+        "批量商品图",
+        "套图",
+        "Temu半托管卖家",
+        "叮当跨境ERP"
+      ]
     }
   ],
-  "count": 762
+  "count": 763
 }
