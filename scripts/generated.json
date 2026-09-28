@@ -11734,7 +11734,21 @@
         "实操",
         "案例分析"
       ]
+    },
+    {
+      "slug": "batch-image-renaming-in-temu-semi-managed-cross-border-selling",
+      "title": "如何给商品图片批量重命名：高效管理文件名的方法",
+      "description": "本文将详细介绍如何在Temu平台中批量重命名商品图片，通过叮当跨境ERP等工具实现高效文件管理，提升运营效率。",
+      "category": "实用技巧",
+      "date": "2026-09-28",
+      "keywords": [
+        "图片重命名",
+        "批量处理",
+        "文件管理",
+        "Temu",
+        "叮当跨境ERP"
+      ]
     }
   ],
-  "count": 785
+  "count": 786
 }
