@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-02T13:20:35.846Z",
+  "updatedAt": "2026-10-02T18:47:59.033Z",
   "urlCount": 7,
   "urls": [
     "https://www.ddddnet.cn/blog/",
     "https://www.ddddnet.cn/sitemap.xml",
-    "https://www.ddddnet.cn/blog/posts/color-correction-and-color-adjustment-tips-for-product-images.html",
     "https://www.ddddnet.cn/blog/posts/temu-ai-product-description-generation.html",
     "https://www.ddddnet.cn/blog/posts/temu-batch-rename-product-images-1790900380481.html",
     "https://www.ddddnet.cn/blog/posts/cross-border-erp-tools-comparison-miaoshou-daoxiaomi-and-dingdang.html",
-    "https://www.ddddnet.cn/blog/posts/temu-infringement-penalty-rules-1790947227696.html"
+    "https://www.ddddnet.cn/blog/posts/temu-infringement-penalty-rules-1790947227696.html",
+    "https://www.ddddnet.cn/blog/posts/temu-semi-trusted-product-process-guide.html"
   ],
   "results": {
     "indexnow": {
@@ -24,8 +24,9 @@
     },
     "baidu": {
       "success": false,
-      "error": 400,
-      "message": "over quota"
+      "skipped": true,
+      "reason": "24h 降频跳过",
+      "lastPushedAt": "2026-10-02T13:20:35.846Z"
     }
   }
 }
