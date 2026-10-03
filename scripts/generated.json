@@ -12010,7 +12010,20 @@
         "Temu半托管",
         "实操干货"
       ]
+    },
+    {
+      "slug": "glm-model-cross-border-ecommerce-practical-application",
+      "title": "GLM大模型在跨境电商中的实际应用",
+      "description": "探索GLM大模型如何助力跨境电商卖家提高效率和竞争力，通过实操案例和详细步骤，展示如何在Temu平台上利用GLM进行高效运营。",
+      "category": "AI工具",
+      "date": "2026-10-03",
+      "keywords": [
+        "GLM模型",
+        "跨境电商",
+        "Temu平台",
+        "AI应用"
+      ]
     }
   ],
-  "count": 804
+  "count": 805
 }
