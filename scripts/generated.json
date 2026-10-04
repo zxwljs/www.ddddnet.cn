@@ -12148,7 +12148,23 @@
         "跨境电商",
         "AI工具"
       ]
+    },
+    {
+      "slug": "deepseek-model-in-ecommerce-operation",
+      "title": "DeepSeek模型在电商运营中的应用：提升Temu店铺运营效率",
+      "description": "DeepSeek模型如何助力Temu半托管卖家的电商运营？本文将深入探讨DeepSeek模型的实际应用，包括商品标题优化、图片处理、侵权检测等，并提供详细的操作指南和案例分析，帮助您提高店铺运营效率和竞争力。",
+      "category": "AI工具",
+      "date": "2026-10-04",
+      "keywords": [
+        "DeepSeek",
+        "电商运营",
+        "AI模型",
+        "Temu",
+        "商品标题优化",
+        "图片处理",
+        "侵权检测"
+      ]
     }
   ],
-  "count": 814
+  "count": 815
 }

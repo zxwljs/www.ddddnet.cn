@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-04T18:27:45.188Z",
+  "updatedAt": "2026-10-04T22:05:36.790Z",
   "urlCount": 7,
   "urls": [
     "https://www.ddddnet.cn/blog/",
     "https://www.ddddnet.cn/sitemap.xml",
-    "https://www.ddddnet.cn/blog/posts/cross-border-infringement-types-and-cases-1791066722761.html",
     "https://www.ddddnet.cn/blog/posts/pod-seller-infringement-defense-system.html",
     "https://www.ddddnet.cn/blog/posts/temu-semi-managed-inventory-management-tips-1791104266038.html",
     "https://www.ddddnet.cn/blog/posts/cross-border-data-analysis-methods-and-indicators-1791124484655.html",
-    "https://www.ddddnet.cn/blog/posts/ai-generated-product-titles-best-practices-1791138460936.html"
+    "https://www.ddddnet.cn/blog/posts/ai-generated-product-titles-best-practices-1791138460936.html",
+    "https://www.ddddnet.cn/blog/posts/deepseek-model-in-ecommerce-operation.html"
   ],
   "results": {
     "indexnow": {
@@ -24,8 +24,9 @@
     },
     "baidu": {
       "success": false,
-      "error": 400,
-      "message": "over quota"
+      "skipped": true,
+      "reason": "24h 降频跳过",
+      "lastPushedAt": "2026-10-04T18:27:45.188Z"
     }
   }
 }
