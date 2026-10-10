@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-10T10:13:59.321Z",
+  "updatedAt": "2026-10-10T16:00:13.290Z",
   "urlCount": 7,
   "urls": [
     "https://www.ddddnet.cn/blog/",
     "https://www.ddddnet.cn/sitemap.xml",
-    "https://www.ddddnet.cn/blog/posts/kimi-large-model-experience-ecommerce-scene-1791554596951.html",
     "https://www.ddddnet.cn/blog/posts/how-to-batch-generate-product-images-with-templates.html",
     "https://www.ddddnet.cn/blog/posts/temu-product-image-guidelines-and-tips-1791589281920.html",
     "https://www.ddddnet.cn/blog/posts/temu-semi-trusted-model-future-opportunities-and-challenges.html",
-    "https://www.ddddnet.cn/blog/posts/temu-policy-changes-in-2026-1791627236429.html"
+    "https://www.ddddnet.cn/blog/posts/temu-policy-changes-in-2026-1791627236429.html",
+    "https://www.ddddnet.cn/blog/posts/ai-generated-product-titles-best-practices-1791648011985.html"
   ],
   "results": {
     "indexnow": {
@@ -24,8 +24,9 @@
     },
     "baidu": {
       "success": false,
-      "error": 400,
-      "message": "over quota"
+      "skipped": true,
+      "reason": "24h 降频跳过",
+      "lastPushedAt": "2026-10-10T10:13:59.321Z"
     }
   }
 }
