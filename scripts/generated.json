@@ -12756,7 +12756,19 @@
         "机遇挑战",
         "叮当跨境ERP"
       ]
+    },
+    {
+      "slug": "temu-platform-rules-and-trap-avoidance-guide",
+      "title": "Temu平台规则解读与避坑指南",
+      "description": "本文为Temu平台半托管卖家提供了详细规则解读和避坑指南，包括账号安全、商品发布规范、违规处理等关键信息，并分享了使用叮当跨境ERP工具的实际操作经验和案例。",
+      "category": "Temu运营",
+      "date": "2026-10-14",
+      "keywords": [
+        "Temu规则",
+        "避坑",
+        "平台政策"
+      ]
     }
   ],
-  "count": 854
+  "count": 855
 }
