@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-18T07:31:47.519Z",
+  "updatedAt": "2026-10-18T12:15:52.884Z",
   "urlCount": 7,
   "urls": [
     "https://www.ddddnet.cn/blog/",
     "https://www.ddddnet.cn/sitemap.xml",
-    "https://www.ddddnet.cn/blog/posts/temu-semi-managed-model-trends.html",
     "https://www.ddddnet.cn/blog/posts/temu-semi-managed-inventory-management-tips-1792273897293.html",
     "https://www.ddddnet.cn/blog/posts/temu-rejects-solutions.html",
     "https://www.ddddnet.cn/blog/posts/independent-stores-versus-platforms-real-world-strategies-for-temu-semi-managed-sellers.html",
-    "https://www.ddddnet.cn/blog/posts/temu-semi-trusted-multiple-store-management-secrets.html"
+    "https://www.ddddnet.cn/blog/posts/temu-semi-trusted-multiple-store-management-secrets.html",
+    "https://www.ddddnet.cn/blog/posts/ai-content-regulation-impact-on-ecommerce.html"
   ],
   "results": {
     "indexnow": {
@@ -24,8 +24,9 @@
     },
     "baidu": {
       "success": false,
-      "error": 400,
-      "message": "over quota"
+      "skipped": true,
+      "reason": "24h 降频跳过",
+      "lastPushedAt": "2026-10-18T07:31:47.519Z"
     }
   }
 }
