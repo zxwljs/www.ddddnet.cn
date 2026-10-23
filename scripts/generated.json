@@ -13632,7 +13632,22 @@
         "叮当跨境ERP",
         "批量处理"
       ]
+    },
+    {
+      "slug": "cross-border-payment-receipt-scheme-temu-semi-trusted-practical-guide",
+      "title": "跨境电商支付与收款方案： Temu半托管的实战指南",
+      "description": "对于使用Temu半托管的跨境电商卖家来说，支付和收款方案的优化至关重要。本文将深入探讨如何选择合适的支付渠道、优化资金流转效率以及应对常见的支付风险，并提供详细的实操步骤和真实案例分析。",
+      "category": "跨境干货",
+      "date": "2026-10-23",
+      "keywords": [
+        "跨境支付",
+        "收款",
+        "资金流转",
+        "Temu半托管",
+        "实操",
+        "案例分析"
+      ]
     }
   ],
-  "count": 912
+  "count": 913
 }
