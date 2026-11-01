@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-11-01T15:34:18.826Z",
+  "updatedAt": "2026-11-01T19:57:39.282Z",
   "urlCount": 7,
   "urls": [
     "https://www.ddddnet.cn/blog/",
     "https://www.ddddnet.cn/sitemap.xml",
-    "https://www.ddddnet.cn/blog/posts/temu-new-product-flow-1793470838587.html",
     "https://www.ddddnet.cn/blog/posts/temu-after-sales-semi-trusted-rating-maintenance-practical-tips-and-case-studies.html",
     "https://www.ddddnet.cn/blog/posts/ecommerce-image-materials-management-and-categorization-guide-for-temu-semi-managed-sellers-1793497121612.html",
     "https://www.ddddnet.cn/blog/posts/miao-shou-erp-shang-jia-cao-zuo-wan-zheng-te-cheng-temu-shou-yi-bei-bi-shen-qiao.html",
-    "https://www.ddddnet.cn/blog/posts/ai-regulation-impact-on-temu-semi-trusted-ecommerce-sellers.html"
+    "https://www.ddddnet.cn/blog/posts/ai-regulation-impact-on-temu-semi-trusted-ecommerce-sellers.html",
+    "https://www.ddddnet.cn/blog/posts/temu-pricing-strategy-profit-calculation-1793563058162.html"
   ],
   "results": {
     "indexnow": {
@@ -24,8 +24,9 @@
     },
     "baidu": {
       "success": false,
-      "error": 400,
-      "message": "over quota"
+      "skipped": true,
+      "reason": "24h 降频跳过",
+      "lastPushedAt": "2026-11-01T15:34:18.826Z"
     }
   }
 }
