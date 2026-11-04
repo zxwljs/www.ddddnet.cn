@@ -14438,7 +14438,21 @@
         "半托管",
         "叮当跨境ERP"
       ]
+    },
+    {
+      "slug": "zhisui-ai-model-in-tumu-semi-managed-cross-border-selling-efficiency-operation",
+      "title": "智谱AI模型助力Temu半托管跨境卖家高效运营",
+      "description": "本文将探讨智谱AI模型在Temu平台上的实际应用，帮助半托管卖家提升效率，降低成本，实现更高效的跨境业务管理。",
+      "category": "AI工具",
+      "date": "2026-11-04",
+      "keywords": [
+        "智谱AI",
+        "Temu",
+        "半托管跨境",
+        "GLM",
+        "跨境业务"
+      ]
     }
   ],
-  "count": 967
+  "count": 968
 }
