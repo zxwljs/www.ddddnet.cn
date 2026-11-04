@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-11-03T18:47:52.958Z",
+  "updatedAt": "2026-11-04T03:51:33.495Z",
   "urlCount": 7,
   "urls": [
     "https://www.ddddnet.cn/blog/",
     "https://www.ddddnet.cn/sitemap.xml",
-    "https://www.ddddnet.cn/blog/posts/temu-semi-trusted-ecommerce-white-background-image-creation-standards-and-tools.html",
     "https://www.ddddnet.cn/blog/posts/ecommerce-image-seo-tips-1793653305993.html",
     "https://www.ddddnet.cn/blog/posts/temu-pricing-strategies-profit-calculation-1793675338174.html",
     "https://www.ddddnet.cn/blog/posts/article-1793705280322.html",
-    "https://www.ddddnet.cn/blog/posts/how-to-check-pattern-copyright-registration-for-temu-sellers.html"
+    "https://www.ddddnet.cn/blog/posts/how-to-check-pattern-copyright-registration-for-temu-sellers.html",
+    "https://www.ddddnet.cn/blog/posts/temu-semi-trusted-cross-border-payment-and-collection-solution.html"
   ],
   "results": {
     "indexnow": {
@@ -24,9 +24,8 @@
     },
     "baidu": {
       "success": false,
-      "skipped": true,
-      "reason": "24h 降频跳过",
-      "lastPushedAt": "2026-11-02T21:01:49.050Z"
+      "error": 400,
+      "message": "over quota"
     }
   }
 }
