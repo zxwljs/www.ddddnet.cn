@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-11-07T01:26:19.534Z",
+  "updatedAt": "2026-11-07T12:42:25.232Z",
   "urlCount": 7,
   "urls": [
     "https://www.ddddnet.cn/blog/",
     "https://www.ddddnet.cn/sitemap.xml",
-    "https://www.ddddnet.cn/blog/posts/ecommerce-scene-shooting-and-post-processing-guide.html",
     "https://www.ddddnet.cn/blog/posts/temu-semi-managed-cross-border-seller-template-reuse-and-variable-generation-techniques.html",
     "https://www.ddddnet.cn/blog/posts/cross-border-e-commerce-intellectual-property-protection-basics-1793982512299.html",
     "https://www.ddddnet.cn/blog/posts/ecommerce-scene-photo-shoot-and-post-processing-tips-1794001923143.html",
-    "https://www.ddddnet.cn/blog/posts/cross-border-selection-methodology-and-tools-share.html"
+    "https://www.ddddnet.cn/blog/posts/cross-border-selection-methodology-and-tools-share.html",
+    "https://www.ddddnet.cn/blog/posts/ai-content-regulation-impact-on-ecommerce-1794055339334.html"
   ],
   "results": {
     "indexnow": {
@@ -24,9 +24,8 @@
     },
     "baidu": {
       "success": false,
-      "skipped": true,
-      "reason": "24h 降频跳过",
-      "lastPushedAt": "2026-11-06T08:43:55.302Z"
+      "error": 400,
+      "message": "over quota"
     }
   }
 }
