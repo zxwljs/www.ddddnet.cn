@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-11-10T22:02:27.902Z",
+  "updatedAt": "2026-11-11T02:22:06.307Z",
   "urlCount": 7,
   "urls": [
     "https://www.ddddnet.cn/blog/",
     "https://www.ddddnet.cn/sitemap.xml",
-    "https://www.ddddnet.cn/blog/posts/how-to-use-set-tool-to-increase-product-uploading-speed.html",
     "https://www.ddddnet.cn/blog/posts/ai-generated-product-titles-best-practices-1794272754255.html",
     "https://www.ddddnet.cn/blog/posts/seasonal-product-selection-cross-border-commerce-temu-semi-trusted-selling-practice.html",
     "https://www.ddddnet.cn/blog/posts/cross-border-payment-and-collection-solution-for-temu-semi-trusted-sellers-1794328949538.html",
-    "https://www.ddddnet.cn/blog/posts/pod-print-patterns-tips-guide.html"
+    "https://www.ddddnet.cn/blog/posts/pod-print-patterns-tips-guide.html",
+    "https://www.ddddnet.cn/blog/posts/chinese-seller-sea-new-opportunity-challenge-1794363721411.html"
   ],
   "results": {
     "indexnow": {
@@ -24,9 +24,8 @@
     },
     "baidu": {
       "success": false,
-      "skipped": true,
-      "reason": "24h 降频跳过",
-      "lastPushedAt": "2026-11-10T01:05:57.728Z"
+      "error": 400,
+      "message": "over quota"
     }
   }
 }
