@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-11-11T23:50:09.968Z",
+  "updatedAt": "2026-11-12T04:50:37.537Z",
   "urlCount": 7,
   "urls": [
     "https://www.ddddnet.cn/blog/",
     "https://www.ddddnet.cn/sitemap.xml",
-    "https://www.ddddnet.cn/blog/posts/pod-print-patterns-tips-guide.html",
     "https://www.ddddnet.cn/blog/posts/chinese-seller-sea-new-opportunity-challenge-1794363721411.html",
     "https://www.ddddnet.cn/blog/posts/cross-border-ecommerce-automation-trends-1794391190866.html",
     "https://www.ddddnet.cn/blog/posts/cross-border-retail-return-handling-and-after-sales-optimization-1794419051361.html",
-    "https://www.ddddnet.cn/blog/posts/chinese-seller-opportunities-and-challenges-in-international-markets-a-practical-guide-for-temu-semi-managed-sellers.html"
+    "https://www.ddddnet.cn/blog/posts/chinese-seller-opportunities-and-challenges-in-international-markets-a-practical-guide-for-temu-semi-managed-sellers.html",
+    "https://www.ddddnet.cn/blog/posts/article-1794459030562.html"
   ],
   "results": {
     "indexnow": {
@@ -24,9 +24,8 @@
     },
     "baidu": {
       "success": false,
-      "skipped": true,
-      "reason": "24h 降频跳过",
-      "lastPushedAt": "2026-11-11T02:22:06.307Z"
+      "error": 400,
+      "message": "over quota"
     }
   }
 }
