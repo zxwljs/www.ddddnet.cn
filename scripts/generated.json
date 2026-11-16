@@ -15052,7 +15052,20 @@
         "销售效率",
         "成本降低"
       ]
+    },
+    {
+      "slug": "temu-semi-managed-store-operation-optimization-with-tongyi-qianwen-model",
+      "title": "如何利用通义千问模型优化Temu半托管店铺运营",
+      "description": "本文将详细介绍如何使用通义千问模型来提升Temu半托管店铺的运营效率。通过实际操作步骤和案例分析，帮助卖家更好地理解并应用这一AI技术。",
+      "category": "AI工具",
+      "date": "2026-11-16",
+      "keywords": [
+        "通义千问",
+        "Temu半托管",
+        "电商场景",
+        "AI应用"
+      ]
     }
   ],
-  "count": 1007
+  "count": 1008
 }
