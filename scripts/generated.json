@@ -15486,7 +15486,22 @@
         "跨境电商",
         "产品审核"
       ]
+    },
+    {
+      "slug": "temu-cross-border-selling-batch-generate-product-images-with-templates",
+      "title": "如何用模板批量生成商品图",
+      "description": "作为Temu半托管的跨境卖家，你是否经常为手动制作商品图片而感到疲惫？本文将教你如何利用叮当跨境ERP轻松实现批量生成商品图，节省时间，提高效率！",
+      "category": "实用技巧",
+      "date": "2026-11-26",
+      "keywords": [
+        "模板生成",
+        "批量商品图",
+        "套图",
+        "Temu",
+        "叮当跨境ERP",
+        "ddddnet.cn"
+      ]
     }
   ],
-  "count": 1036
+  "count": 1037
 }
